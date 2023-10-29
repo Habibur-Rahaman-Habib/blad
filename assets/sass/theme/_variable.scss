@@ -1,29 +1,17 @@
 // Google Font
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 // Template Font Name
-$primary-font: 'Jost', sans-serif;
+$font: "Jost", sans-serif;
 
 // Template Color Name
-$primary-color: #F4462E;
-$secondary-color: #FFBB00;
-$color-3: #307F6B;
-$heading-color: #1F1F2C;
-$paragraph-color: #7B7B7B;
-$white-color: #ffffff;
-$black-color: #000000;
-$border-color: #eaeaea;
+$primary-color: #ea062b;
+$secondary-color: #111111;
+$white: #fff;
+$gray: #e7e7e7;
+$yellow: #ffc92e;
 
 // Social Media Color
-$facebook: #3F6DC7;
-$twitter: #009DED;
-$dribbble: #ea4c89;
-$behance: #131418;
-$google-plus: #dd4b39;
-$linkedin: #0077B5;
-$instagram: #e4405f;
-
-
 
 // Transition
-$transition: all .3s ease-in;
+$transition: all 0.3s ease-in;

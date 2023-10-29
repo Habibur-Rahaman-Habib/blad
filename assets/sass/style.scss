@@ -1,12 +1,12 @@
 /*-------------------------------------------------------------
-Template Name: G-shop
+Template Name: Blad Ai
 Template URL: 
-Author Name: G-shop
+Author Name: 
 Author URL: 
 Version: 1.0
 Description: 
 Tags: nft
-Text Domain: nftcrazy
+Text Domain:
 -------------------------------------------------------------*/
 
 /*------------------------------------------------------------- 
@@ -34,25 +34,17 @@ TABLE OF CONTENTS:
 --------------------------------------------------------------*/
 
 // Theme
-@import 'theme/variable';
-@import 'theme/mixin';
-@import 'theme/theme-default';
-@import 'theme/spacing';
-@import 'theme/preloader';
+@import "theme/variable";
+@import "theme/mixin";
+@import "theme/button";
+@import "theme/spacing";
+@import "theme/preloader";
+@import "theme/themedefault";
 
 // Layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/breadcrumb';
+@import "layout/header";
+@import "layout/footer";
+@import "layout/breadcumb";
 
 // Pages
-@import 'pages/home-1.scss';
-@import 'pages/auction';
-@import 'pages/wallet';
-@import 'pages/create-item';
-@import 'pages/authors';
-@import 'pages/register';
-@import 'pages/contact';
-@import 'pages/activity';
-@import 'pages/explore';
-@import 'pages/blog';
+@import "pages/index-1";

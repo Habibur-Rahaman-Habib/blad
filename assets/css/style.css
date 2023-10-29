@@ -1,0 +1,55 @@
+/*-------------------------------------------------------------
+Template Name: Blad Ai
+Template URL: 
+Author Name: 
+Author URL: 
+Version: 1.0
+Description: 
+Tags: nft
+Text Domain:
+-------------------------------------------------------------*/
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> Variable
+>> Mixin
+>> Theme Defualt
+>> Spacing
+>> Preloader
+>> Header
+>> Footer
+>> Breadcrumb
+>> Homepage
+>> Auction
+>> Wallet
+>> Create Item
+>> Authors
+>> Register
+>> Contact
+>> Activity
+>> Explore
+>> Blog
+
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Jost", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
