@@ -1,32 +1,22 @@
-body {
-    margin: 0;
-    font-family: var(--body-font);
-    background-color: var(--light-color);
-}
-
-input {
-    outline: 0;
-}
-
-select {
-    outline: 0;
-    border: 0;
-    font-family: var(--body-font);
-}
-
-a {
-    text-decoration: none;
-    transition: all 0.3s;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 0;
+  list-style-type: none;
 }
 
-button {
-    border: 0;
-    background-color: transparent;
-    transition: var(--transition-base);
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
