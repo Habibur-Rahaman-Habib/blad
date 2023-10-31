@@ -1,0 +1,14 @@
+/**************about__section**********/
+.primary__btn{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--white);
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 14px 41px;
+    transition: var(--transition);
+    &:hover{
+        background: var(--secondary-color);
+    }
+}
