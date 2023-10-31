@@ -11,42 +11,542 @@
   <title>Blad Ai - Blood Donation</title>
 
   <!-- Favicon Icon -->
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="assets/images/favicon.png">
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome_all.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
   <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/fancybox.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 
 <body>
 
+  <!-- header start -->
   <header>
-    <div class="container">
-      <div class="header_top">
+    <div class="header_top d-none d-lg-block d-xl-block d-xxl-block">
+      <div class="container">
         <div class="row">
-          <div class="col-xl-3">
-
+          <div class="col-xl-3 col-lg-3">
+            <div class="header_top_content">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:01977259912">+01 (977) 2599 12</a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3">
+            <div class="header_top_content">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:company@domin.com">company@domin.com</a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3">
+            <div class="header_top_content">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <a href="#">3146 Koontz Lane, USA</a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3">
+            <div class="header_top_social">
+              <p>Follow Now</p>
+              <ul class="d-flex">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="header_bottom"></div>
+    </div>
+    <div class="header_bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+            <div class="header_logo">
+              <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 d-none d-xxl-block d-xl-block">
+            <ul class="main_menu">
+              <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">About Us </a></li>
+              <li><a href="#">Campaign <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-2  d-none d-xxl-block d-xl-block">
+            <div class="header_search_menu d-flex">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <select>
+                <option selected>English</option>
+                <option value="1">Franch</option>
+                <option value="2">Spanish</option>
+              </select>
+              <div class="offcanvas_right">
+                <button class="btn offcanvas_btn" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span><i
+                      class="fa-solid fa-bars"></i></span></button>
 
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    ...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-8 col-6 d-block d-xxl-none d-xl-none">
+            <div class="d-flex align-items-center gap-2 justify-content-end">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <div class="mobile_menu">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample">
+                  mobile
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </header>
+  <!-- header end -->
+
+  <!-- hero section start -->
+  <section class="hm1_hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="hm1_content">
+            <div class="video_play d-flex gap-3 align-items-center">
+              <a href="https://youtu.be/K87aFjB7Ff0?si=kpgANQNewn8DSOtq" data-fancybox=""
+                class="red_bg d-inline-flex align-items-center justify-content-center"><i
+                  class="fa-solid fa-play"></i></a>
+              <h6>Intro Video</h6>
+            </div>
+            <h3>Donate blood,save life !</h3>
+            <h1>Donate Blood And Inspires Others.</h1>
+            <a href="#" class="explore_now red_btn">Explore Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- hero section end -->
+
+  <!-- register & donate start -->
+  <section class="register_donate">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="register_donate_item">
+            <div class="donate_item_top">
+              <div class="donate_img">
+                <img src="assets/images/r1.jpg" alt="">
+              </div>
+              <div class="donate_content text-center">
+                <span><img src="assets/images/icon/d1.png" alt=""></span>
+                <a href="#">
+                  <h5>Become a donate</h5>
+                </a>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                  born and I will give</p>
+              </div>
+            </div>
+            <a href="#" class="d-block black_bg text-center">Read More</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="register_donate_item">
+            <div class="donate_item_top">
+              <div class="donate_img">
+                <img src="assets/images/r2.jpg" alt="">
+              </div>
+              <div class="donate_content text-center">
+                <span><img src="assets/images/icon/d2.png" alt=""></span>
+                <a href="#">
+                  <h5>Why give blood?</h5>
+                </a>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                  born and I will give</p>
+              </div>
+            </div>
+            <a href="#" class="d-block black_bg text-center">Read More</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="register_donate_item">
+            <div class="donate_item_top">
+              <div class="donate_img">
+                <img src="assets/images/r3.jpg" alt="">
+              </div>
+              <div class="donate_content text-center">
+                <span><img src="assets/images/icon/d3.png" alt=""></span>
+                <a href="#">
+                  <h5>How Denations Help?</h5>
+                </a>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                  born and I will give</p>
+              </div>
+            </div>
+            <a href="#" class="d-block black_bg text-center">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- register & donate end -->
+
+  <!-- help the people start -->
+  <section class="help_people">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12">
+          <div class="help_wrap position-relative">
+            <img src="assets/images/help1.png" alt="">
+            <img src="assets/images/help2.png" alt="" class="help_over">
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12">
+          <div class="help_content">
+            <p class="red_color">Help The People in Need</p>
+            <h2>Welcome to Blood
+              Donors Organization</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+              suspendisse the gravida. Risus commodo viverra maecenas</p>
+            <div class="d-flex justify-content-between">
+              <ul>
+                <li><i class="fa-solid fa-angles-right"></i> Good Service</li>
+                <li><i class="fa-solid fa-angles-right"></i> Help People</li>
+                <li><i class="fa-solid fa-angles-right"></i> Hugine Tools</li>
+              </ul>
+              <ul>
+                <li><i class="fa-solid fa-angles-right"></i> 24h Service</li>
+                <li><i class="fa-solid fa-angles-right"></i> Health Check</li>
+                <li><i class="fa-solid fa-angles-right"></i> Blood Bank</li>
+              </ul>
+            </div>
+            <a href="#" class="explore_now red_btn">Explore Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- help the people end -->
+
+  <!-- counter start -->
+  <section class="hm1_counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+          <div class="counter_item text-center">
+            <img src="assets/images/icon/c1.png" alt="">
+            <h2><span class="count">25</span></h2>
+            <p>Year experience</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+          <div class="counter_item text-center">
+            <img src="assets/images/icon/c2.png" alt="">
+            <h2><span class="count">3225</span></h2>
+            <p>happy donors</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+          <div class="counter_item text-center">
+            <img src="assets/images/icon/c3.png" alt="">
+            <h2><span class="count">90</span></h2>
+            <p>total awards</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="counter_item text-center">
+            <img src="assets/images/icon/c4.png" alt="">
+            <h2><span class="count">3168</span></h2>
+            <p>happy recipient</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- counter end -->
+
+  <!-- service start -->
+  <section class="service">
+    <div class="container">
+      <div class="row mb-5 ">
+        <div class="col-12">
+          <div class="common_title text-center">
+            <p>What We do</p>
+            <h2>our best services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center g-0 service_wrap">
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_1">
+          <div class="service_item">
+            <div class="img">
+              <img src="assets/images/s1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_2">
+          <div class="service_content ps-5">
+            <h1>01</h1>
+            <a href="#">
+              <h4>Blood Donation</h4>
+            </a>
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorpe matti pulvinar dapibus leo.</p>
+            <a href="#" class="red_btn service_btn">Read More</a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_3">
+          <div class="service_content text-end pe-5">
+            <h1>02</h1>
+            <a href="#">
+              <h4>Health Check</h4>
+            </a>
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorpe matti pulvinar dapibus leo.</p>
+            <a href="#" class="red_btn service_btn">Read More</a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_4">
+          <div class="service_item">
+            <div class="img">
+              <img src="assets/images/s2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_5">
+          <div class="service_item">
+            <div class="img">
+              <img src="assets/images/s3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6  col-12 order_6">
+          <div class="service_content ps-5">
+            <h1>03</h1>
+            <a href="#">
+              <h4>Blood Bank</h4>
+            </a>
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorpe matti pulvinar dapibus leo.</p>
+            <a href="#" class="red_btn service_btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- service end -->
+
+  <!-- call now start -->
+  <section class="hm1_counter call_now">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="call_content text-center">
+            <span class="call_over"><i class="fa-solid fa-phone"></i></span>
+            <p>START DONATING</p>
+            <a href="tell:333 555 9090">
+              <h2>Call Now: <span>333 555 9090</span></h2>
+            </a>
+            <ul class="d-flex gap-4 justify-content-center ">
+              <li>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>New York - 1075 Firs Avenue</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <a href="mailto:company@domin.com">Donate@gmail.com</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- call now end -->
+
+  <!-- campaign start -->
+  <section class="campaign">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="common_title text-center">
+            <p>Donate Now</p>
+            <h2>Popular Campaigns</h2>
+          </div>
+        </div>
+
+        <div class="campaign_slider">
+          <div class="campaign_slier_item">
+            <div class="row">
+              <div class="col-6">
+                <div class="campaign_img">
+                  <img src="assets/images/c1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- campaign end -->
 
 
 
+  <!-- lets change start -->
+  <section class="change red_bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-9 col-lg-9  col-12">
+          <div class="change_content">
+            <h2>Let's change the world, Join us now!</h2>
+            <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
+              but occasionally
+              circumstances occur in which toil and pain can procure reat pleasure.</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3  col-12 text-xl-end text-lg-end text-center">
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- lets change end -->
 
+  <!-- footer section start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="footer_content">
+            <h5>About Us</h5>
+            <p>Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat</p>
+            <ul>
+              <li><span>Phone:</span> +1(456)657-887, 999</li>
+              <li><span>Email:</span> contactblood@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="footer_content">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">New Campaign</a></li>
+              <li><a href="#">Latest News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="footer_content">
+            <h5>Our Services</h5>
+            <ul>
+              <li><a href="#">Blood Donation</a></li>
+              <li><a href="#">Health Check</a></li>
+              <li><a href="#">Blood Bank</a></li>
+              <li><a href="#">Donate Process</a></li>
+              <li><a href="#">Blood Info</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="footer_content">
+            <h5>Latest News</h5>
+            <div class="footer_blog">
+              <div class="fblog_item mb-3">
+                <div class="row align-items-center">
+                  <div class="col-4">
+                    <div class="fblog_img img">
+                      <a href="#"><img src="assets/images/f1.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="fblog_content">
+                      <a href="#"> A Formula For Help And Happiness</a>
+                      <span>18 February, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fblog_item mb-3">
+                <div class="row align-items-center">
+                  <div class="col-4">
+                    <div class="fblog_img img">
+                      <a href="#"><img src="assets/images/f2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="fblog_content">
+                      <a href="#"> Donation is hope for poor helpless children</a>
+                      <span>18 February, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section end -->
+
+  <!-- mobile menu offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- mobile menu offcanvas -->
   <!-- Javascript Files -->
-  <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
-  <script src="assets/js/vendor/popper.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.min.js"></script>
-  <script src="assets/js/vendor/slick.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/fancybox.js"></script>
+  <script src="assets/js/counterup.min.js"></script>
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
