@@ -33,14 +33,11 @@
         });
     });
 
-<<<<<<< Updated upstream
-=======
     $(".testimonials__slider").slick({
         slidesToShow: 1,
         arrows: false,
         slidesToScroll: 1,
     });
->>>>>>> Stashed changes
 
 })(jQuery);
 

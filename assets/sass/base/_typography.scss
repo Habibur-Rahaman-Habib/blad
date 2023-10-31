@@ -1,16 +1,12 @@
 body {
   font-family: var(--font);
-<<<<<<< Updated upstream
+  font-weight: 4000;
+  font-size: 16px;
 }
 
 .container {
   max-width: 1170px !important;
   margin: auto;
-}
-=======
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--text-color);
 }
 h1,
 .h1,
@@ -30,7 +26,6 @@ h6,
 }
 
 .h1,
->>>>>>> Stashed changes
 h1 {
   font-size: 72px;
   line-height: 80px;

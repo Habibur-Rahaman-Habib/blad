@@ -1,10 +1,9 @@
 // Google Font
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
-
-<<<<<<< Updated upstream
 :root {
   --primary-color: #ea062b;
   --second-color: #111111;
+  --secondary-color: #111111;
   --white: #fff;
   --gray: #e7e7e7;
   --yellow: #ffc92e;
@@ -12,21 +11,5 @@
   --font: "Jost", sans-serif;
   --p-color: #666666;
   --border-color: #6d6d6d;
-=======
-// Template Font Name
-:root {
-    --font: 'Jost', sans-serif;
-} 
-
-// Template Color Name
-:root{
-    
-    --primary-color: #ea062b;
-    --secondary-color: #111111;
-    --text-color: #8c8c8c;
-    --white: #fff;
-    --gray: #e7e7e7;
-    --yellow: #ffc92e;
-    --transition: all 0.3s ease-in;
->>>>>>> Stashed changes
+  --transition_base: .3s;
 }
