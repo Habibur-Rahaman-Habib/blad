@@ -6,7 +6,7 @@ header .header_top {
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--second-color);
+    background: var(--secondary-color);
     height: 100%;
     width: 68%;
     z-index: -1; }

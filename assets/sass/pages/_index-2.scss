@@ -1,0 +1,71 @@
+// hero
+.hm2_hero {
+  background: url("../images/hm2.jpg") no-repeat;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #00000082;
+    z-index: -1;
+  }
+}
+
+.hm2_content {
+  h4 {
+    color: white;
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-size: 65px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+  }
+  a {
+    margin: 0 5px;
+  }
+}
+.hm2_hero_slider .prev-arrow,
+.hm2_hero_slider .next-arrow {
+  color: var(--white);
+}
+
+// register & donate
+.register_donate_item2 {
+  h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 90px;
+    &::before {
+      content: "";
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 80px;
+      height: 2px;
+      background: var(--secondary-color);
+      top: 50%;
+    }
+  }
+}
+
+// help
+.help_3 {
+  position: absolute;
+  z-index: -1;
+}
+.help_4 {
+  margin-left: 14px;
+  margin-top: 12px;
+}

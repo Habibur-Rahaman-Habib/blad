@@ -33,6 +33,68 @@
         });
     });
 
+    // this is for back to top
+    var btn = $('#button');
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+
+    $(".campaign_slider").slick({
+        slidesToShow: 2,
+        arrows: false,
+        dots: true,
+        customPaging: function (slider, i) {
+            return '<span></span>';
+        },
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
+    $(".testi_slider").slick({
+        slidesToShow: 3,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1150,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+        ]
+    });
+
+    $(".hm1_hero_slider").slick({
+        slidesToShow: 1,
+        prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
+        // speed: 2000,
+        autoplay: false,
+        // fade: true,
+    });
+
 
 })(jQuery);
 

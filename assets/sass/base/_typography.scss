@@ -35,10 +35,10 @@ p {
   background: var(--primary-color);
 }
 .black_color {
-  color: var(--second-color);
+  color: var(--secondary-color);
 }
 .black_bg {
-  background: var(--second-color);
+  background: var(--secondary-color);
 }
 .white_color {
   color: var(--white);
@@ -61,31 +61,6 @@ select:focus {
   box-shadow: none;
 }
 
-.red_btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--primary-color);
-  color: white;
-  position: relative;
-  z-index: 1;
-  font-weight: 500;
-  &:hover::before {
-    width: 100%;
-  }
-  &::before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    background: var(--second-color);
-    left: 0;
-    top: 0;
-    transition: var(--transition);
-  }
-}
-
 .img {
   overflow: hidden;
   img {
@@ -106,5 +81,28 @@ select:focus {
   h2 {
     font-weight: 700;
     text-transform: capitalize;
+  }
+}
+
+.common_title1 {
+  p {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--white);
+  }
+}
+
+.slider-spacing {
+  .slick-list {
+    margin: 0 -12px;
+    .slick-slide {
+      margin: 0 12px;
+    }
   }
 }

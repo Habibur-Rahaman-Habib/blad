@@ -7,7 +7,7 @@ header {
       position: absolute;
       top: 0;
       left: 0;
-      background: var(--second-color);
+      background: var(--secondary-color);
       height: 100%;
       width: 64%;
       z-index: -1;
@@ -97,7 +97,7 @@ header {
     li {
       &:hover {
         a {
-          background: var(--second-color);
+          background: var(--secondary-color);
           color: var(--white);
         }
       }
@@ -146,7 +146,7 @@ header {
       a {
         display: inline-flex;
         align-items: center;
-        color: var(--second-color);
+        color: var(--secondary-color);
         gap: 6px;
         font-weight: 500;
         font-size: 16px;

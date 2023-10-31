@@ -29,7 +29,7 @@ p {
   background: var(--primary-color); }
 
 .black_color {
-  color: var(--second-color); }
+  color: var(--secondary-color); }
 
 .black_bg {
-  background: var(--second-color); }
+  background: var(--secondary-color); }
