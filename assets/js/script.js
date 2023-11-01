@@ -83,6 +83,12 @@
                     slidesToShow: 2,
                 }
             },
+            {
+                breakpoint: 765,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
         ]
     });
 
@@ -95,6 +101,35 @@
         // fade: true,
     });
 
+
+    $(".gallary_slider").slick({
+        slidesToShow: 3,
+        arrows: false,
+        dots: true,
+        customPaging: function (slider, i) {
+            return '<span></span>';
+        },
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
+    $(".testimonials__slider").slick({
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1,
+    });
 
 })(jQuery);
 

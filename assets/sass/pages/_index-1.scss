@@ -93,88 +93,86 @@
 }
 
 // register & donate
-.register_donate {
-  background: var(--gray);
-  .register_donate_item {
-    &:hover {
-      .donate_item_top {
-        .donate_img {
-          &::before {
-            visibility: visible;
-            opacity: 1;
-          }
-        }
-        .donate_content {
-          span {
-            background: var(--primary-color);
-          }
-          h5 {
-            color: var(--secondary-color);
-            transition: var(--transition);
-            &:hover {
-              color: var(--primary-color);
-            }
-          }
-        }
-      }
-      a {
-        background: var(--primary-color);
-      }
-    }
+
+.register_donate_item {
+  &:hover {
     .donate_item_top {
-      padding: 15px;
-      background: var(--white);
       .donate_img {
-        position: relative;
         &::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: #49496e6e;
-          top: 0;
-          left: 0;
-          transition: var(--transition);
-          visibility: hidden;
-          opacity: 0;
-          // transform: scale(0);
-        }
-        img {
-          width: 100%;
+          visibility: visible;
+          opacity: 1;
         }
       }
       .donate_content {
-        position: relative;
-        padding-top: 70px;
         span {
-          position: absolute;
-          top: -45px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: inline-flex;
-          width: 92px;
-          height: 92px;
-          background: var(--secondary-color);
-          align-items: center;
-          justify-content: center;
-          margin: auto;
-          transition: var(--transition);
+          background: var(--primary-color);
         }
         h5 {
-          margin-bottom: 30px;
-          font-weight: 600;
           color: var(--secondary-color);
-        }
-        p {
-          margin-bottom: 15px;
+          transition: var(--transition);
+          &:hover {
+            color: var(--primary-color);
+          }
         }
       }
     }
     a {
-      color: white;
-      padding: 13px 0;
-      transition: var(--transition);
+      background: var(--primary-color);
     }
+  }
+  .donate_item_top {
+    padding: 15px;
+    background: var(--white);
+    .donate_img {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #49496e6e;
+        top: 0;
+        left: 0;
+        transition: var(--transition);
+        visibility: hidden;
+        opacity: 0;
+        // transform: scale(0);
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .donate_content {
+      position: relative;
+      padding-top: 70px;
+      span {
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+        width: 92px;
+        height: 92px;
+        background: var(--secondary-color);
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        transition: var(--transition);
+      }
+      h5 {
+        margin-bottom: 30px;
+        font-weight: 600;
+        color: var(--secondary-color);
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  a {
+    color: white;
+    padding: 13px 0;
+    transition: var(--transition);
   }
 }
 
@@ -218,8 +216,6 @@
 .help_people {
 }
 .help_wrap {
-  img {
-  }
   .help_over {
     position: absolute;
     right: 0;
@@ -409,11 +405,9 @@
 }
 
 // campaign
-.campaign {
-  background: var(--gray);
-}
 .campaign_slier_item {
   background: var(--white);
+  box-shadow: 0px 0px 14px #0000001c;
   @media (max-width: 992px) {
     .row {
       align-items: center;
@@ -495,32 +489,6 @@
     }
   }
 }
-.campaign_slider {
-  .slick-dots {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 50px;
-    li {
-      span {
-        margin: 3px 0;
-        border: 4px solid var(--gray);
-        border-radius: 50%;
-        width: 18px;
-        height: 18px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 10px;
-        outline: 1px solid var(--primary-color);
-        background: transparent;
-      }
-      &.slick-active span {
-        background: var(--primary-color);
-      }
-    }
-  }
-}
 
 // let's change
 .change {
@@ -573,10 +541,8 @@
 }
 
 // news
-.news {
-  background: var(--gray);
-}
 .news_content_item {
+  box-shadow: var(--shadow);
   &:hover {
     .news_img {
       a {
@@ -800,6 +766,7 @@
   padding: 35px;
   box-shadow: var(--shadow);
   background: var(--white);
+  height: 100%;
   ul {
     li {
       font-size: 16px;
