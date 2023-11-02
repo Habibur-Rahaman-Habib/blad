@@ -30,7 +30,6 @@ h1 {
   font-size: 72px;
   @include screen-768 {
     font-size: 50px;
-    line-height: 1.2em;
   }
   @include portrait-phone {
     font-size: 40px;
@@ -41,7 +40,6 @@ h2 {
   font-size: 48px;
   @include screen-768 {
     font-size: 42px;
-    line-height: 1.2em;
   }
   @include portrait-phone {
     font-size: 36px;
@@ -52,7 +50,6 @@ h3 {
   font-size: 36px;
   @include portrait-phone {
     font-size: 30px;
-    line-height: 1.2em;
   }
 }
 

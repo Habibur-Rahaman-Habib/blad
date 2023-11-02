@@ -75,8 +75,7 @@ h1 {
   @media (max-width: 767.98px) {
     .h1,
     h1 {
-      font-size: 50px;
-      line-height: 1.2em; } }
+      font-size: 50px; } }
   @media (max-width: 575.98px) {
     .h1,
     h1 {
@@ -88,8 +87,7 @@ h2 {
   @media (max-width: 767.98px) {
     .h2,
     h2 {
-      font-size: 42px;
-      line-height: 1.2em; } }
+      font-size: 42px; } }
   @media (max-width: 575.98px) {
     .h2,
     h2 {
@@ -101,8 +99,7 @@ h3 {
   @media (max-width: 575.98px) {
     .h3,
     h3 {
-      font-size: 30px;
-      line-height: 1.2em; } }
+      font-size: 30px; } }
 
 .h4,
 h4 {
@@ -1067,17 +1064,35 @@ footer .footer_bottom {
   background: url("../images/hero1.jpg") no-repeat;
   background-size: cover;
   padding: 145px 0;
-  padding-bottom: 204px; }
+  padding-bottom: 204px;
+  background-position: center center; }
   @media (max-width: 991px) {
     .hm1_hero {
       padding-bottom: 115px; } }
+
+@media (max-width: 576px) {
+  .hm1_content {
+    text-align: center; } }
 
 .hm1_content .video_play {
   margin-bottom: 35px; }
   .hm1_content .video_play a {
     width: 65px;
     height: 65px;
-    color: white; }
+    color: white;
+    position: relative;
+    z-index: 1; }
+    .hm1_content .video_play a::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      background: #ff000024;
+      z-index: -1;
+      left: 5px;
+      top: 5px;
+      -webkit-animation: blood2 1.5s infinite;
+      animation: blood2 2s infinite; }
     .hm1_content .video_play a i {
       font-size: 20px; }
   .hm1_content .video_play h6 {
@@ -1259,6 +1274,14 @@ footer .footer_bottom {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+  @media (max-width: 767px) {
+    .help_wrap .help_over {
+      top: initial;
+      bottom: 5px;
+      right: -10px;
+      -webkit-transform: initial;
+      -ms-transform: initial;
+      transform: initial; } }
 
 .help_content p.red_color {
   font-weight: 500;
@@ -1869,9 +1892,15 @@ footer .footer_bottom {
   font-weight: 700;
   color: white;
   margin-bottom: 50px; }
+  @media (max-width: 576px) {
+    .hm2_content h2 {
+      font-size: 50px; } }
+  @media (max-width: 376px) {
+    .hm2_content h2 {
+      font-size: 46px; } }
 
 .hm2_content a {
-  margin: 0 5px; }
+  margin: 5px 5px; }
 
 .hm2_hero_slider .prev-arrow,
 .hm2_hero_slider .next-arrow {
@@ -1903,6 +1932,9 @@ footer .footer_bottom {
 .help_4 {
   margin-left: 14px;
   margin-top: 12px; }
+  @media (max-width: 767px) {
+    .help_4 {
+      width: 100%; } }
 
 .progress_content:hover .p_content_left {
   background: var(--primary-color);
@@ -2093,7 +2125,11 @@ footer .footer_bottom {
   position: relative;
   z-index: 1;
   background-size: cover;
-  padding: 240px 0; }
+  padding: 240px 0;
+  background-position: center center; }
+  @media (max-width: 767px) {
+    .hm3_hero {
+      padding: 120px 0; } }
   .hm3_hero::before {
     content: "";
     position: absolute;
@@ -2104,11 +2140,10 @@ footer .footer_bottom {
     background: #00000082;
     z-index: -1; }
 
-.register_donate3 {
-  padding-bottom: 180px; }
-
 .blood3 {
-  background: url("../images/b3.jpg") no-repeat; }
+  background: url("../images/b3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
   .blood3 h2 {
     margin-bottom: 15px; }
   .blood3 span {
@@ -2130,25 +2165,28 @@ footer .footer_bottom {
   --bs-accordion-border-color: none !important; }
   .payment .accordion .accordion-item {
     margin-top: 25px; }
-    .payment .accordion .accordion-item h2 button {
-      background: var(--gray1);
-      padding: 12px;
-      height: 55px;
-      padding-left: 40px;
-      font-size: 18px;
-      font-weight: 600;
-      -webkit-transition: var(--transition);
-      -o-transition: var(--transition);
-      transition: var(--transition); }
-      .payment .accordion .accordion-item h2 button::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
-        position: absolute;
-        left: 10px;
-        width: 16px;
-        height: 15px;
-        background-size: cover; }
-      .payment .accordion .accordion-item h2 button:not(.collapsed)::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E"); }
+    .payment .accordion .accordion-item h2 {
+      padding-bottom: 0;
+      background: var(--gray1); }
+      .payment .accordion .accordion-item h2 button {
+        padding: 0;
+        background: var(--gray1);
+        height: 55px;
+        padding-left: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
+        transition: var(--transition); }
+        .payment .accordion .accordion-item h2 button::after {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+          position: absolute;
+          left: 10px;
+          width: 16px;
+          height: 15px;
+          background-size: cover; }
+        .payment .accordion .accordion-item h2 button:not(.collapsed)::after {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E"); }
 
 .payment .accordion-collapse .accordion-body {
   background: var(--gray1);

@@ -9,18 +9,36 @@
   background-size: cover;
   padding: 145px 0;
   padding-bottom: 204px;
+  background-position: center center;
   @media (max-width: 991px) {
     padding-bottom: 115px;
   }
 }
 
 .hm1_content {
+  @media (max-width: 576px) {
+    text-align: center;
+  }
   .video_play {
     margin-bottom: 35px;
     a {
       width: 65px;
       height: 65px;
       color: white;
+      position: relative;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        background: #ff000024;
+        z-index: -1;
+        left: 5px;
+        top: 5px;
+        -webkit-animation: blood2 1.5s infinite;
+        animation: blood2 2s infinite;
+      }
       i {
         font-size: 20px;
       }
@@ -221,6 +239,14 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: 767px) {
+      top: initial;
+      bottom: 5px;
+      right: -10px;
+      -webkit-transform: initial;
+      -ms-transform: initial;
+      transform: initial;
+    }
   }
 }
 .help_content {

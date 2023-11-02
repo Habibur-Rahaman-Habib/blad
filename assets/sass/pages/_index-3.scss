@@ -5,6 +5,10 @@
   z-index: 1;
   background-size: cover;
   padding: 240px 0;
+  background-position: center center;
+  @media (max-width: 767px) {
+    padding: 120px 0;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -17,13 +21,11 @@
   }
 }
 
-.register_donate3 {
-  padding-bottom: 180px;
-}
-
 // blood
 .blood3 {
   background: url("../images/b3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
   h2 {
     margin-bottom: 15px;
   }
@@ -55,9 +57,11 @@
     .accordion-item {
       margin-top: 25px;
       h2 {
+        padding-bottom: 0;
+        background: var(--gray1);
         button {
+          padding: 0;
           background: var(--gray1);
-          padding: 12px;
           height: 55px;
           padding-left: 40px;
           font-size: 18px;
