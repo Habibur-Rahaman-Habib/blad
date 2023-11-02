@@ -3,6 +3,7 @@
   background-size: cover;
   position: relative;
   z-index: 1;
+  background-position: center center;
   &::before {
     content: "";
     position: absolute;

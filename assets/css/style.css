@@ -1025,7 +1025,8 @@ footer .footer_bottom {
   background: url("../images/b.jpg") no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  background-position: center center; }
   .breadcrumb_section::before {
     content: "";
     position: absolute;
