@@ -1,5 +1,4 @@
 .container {
-  max-width: 1400px;
   padding: 0 12px;
   @include portrait-phone {
     padding: 0 16px;
@@ -89,7 +88,6 @@
   list-style-type: disc;
   margin-left: 16px;
 }
-
 
 .color-black {
   color: var(--hm4-headings-color);

@@ -518,7 +518,7 @@
 
 // let's change
 .change {
-  padding: 95px 0;
+  padding: 65px 0;
   .change_content {
     h2 {
       color: var(--white);
@@ -647,7 +647,8 @@
     padding: 25px;
     padding-bottom: 0;
     background: var(--white);
-    box-shadow: 0px 0px 20px #0000002b;
+    -webkit-box-shadow: 0px 0px 20px #0000002b;
+    box-shadow: 0px 0px 20px #0000001c;
     &:hover {
       .team_img {
         ul {
@@ -718,6 +719,7 @@
       }
       p {
         font-size: 18px;
+        font-weight: 500;
       }
     }
   }
@@ -796,11 +798,11 @@
   ul {
     li {
       font-size: 16px;
-      margin-bottom: 20px;
       color: var(--secondary-color);
       & + li {
         border-top: 1px solid var(--gray);
         padding-top: 20px;
+        margin-top: 20px;
       }
       i {
         color: var(--primary-color);

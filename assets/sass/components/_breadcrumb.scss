@@ -28,6 +28,10 @@
       font-weight: 500;
       a {
         color: white;
+        transition: var(--transition);
+        &:hover {
+          color: var(--primary-color);
+        }
       }
       &.active {
         color: var(--primary-color);
@@ -36,7 +40,8 @@
         &::before {
           content: "/";
           font-size: 24px;
-          margin-left: 10px;
+          margin-left: 8px;
+          margin-right: 8px;
         }
       }
     }

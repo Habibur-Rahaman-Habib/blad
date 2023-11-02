@@ -125,6 +125,23 @@
         ]
     });
 
+    $(".cam_detail_slider").slick({
+        slidesToShow: 2,
+        arrows: false,
+        dots: true,
+        customPaging: function (slider, i) {
+            return '<span></span>';
+        },
+        responsive: [
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+
     $(".testimonials__slider").slick({
         slidesToShow: 1,
         arrows: false,
