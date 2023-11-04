@@ -148,6 +148,20 @@
         slidesToScroll: 1,
     });
 
+
+    $(".contact__slider").slick({
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1,
+    });
+
+
+    $(".user__Slider").slick({
+        slidesToShow: 2,
+        arrows: false,
+        slidesToScroll: 1,
+    });
+
 })(jQuery);
 
 
