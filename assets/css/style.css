@@ -2164,6 +2164,16 @@ footer .footer_bottom {
     -webkit-transform: scale(1.4);
     transform: scale(1.4); } }
 
+.news_content2 {
+  padding: 35px 30px !important; }
+  .news_content2 a {
+    color: var(--white) !important;
+    font-weight: 700;
+    font-size: 16px;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition); }
+
 .hm3_hero {
   background: url("../images/hm3.jpg") no-repeat;
   position: relative;

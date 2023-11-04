@@ -255,8 +255,18 @@
   }
 }
 
-// footer
+// our news
+.news_content2 {
+  padding: 35px 30px !important;
+  a {
+    color: var(--white) !important;
+    font-weight: 700;
+    font-size: 16px;
+    transition: var(--transition);
+  }
+}
 
+// footer
 // .footer_top2 {
 //   // background: url("../../images/h2_f_bg.jpg") no-repeat !important;
 //   // background-size: cover !important;
