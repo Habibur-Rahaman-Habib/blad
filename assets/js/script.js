@@ -147,6 +147,13 @@
         arrows: false,
         slidesToScroll: 1,
     });
+    $(".sub_slider").slick({
+        slidesToShow: 1,
+        autoplay: true,
+        arrows: true,
+        prevArrow: '<button class="prev-arrow"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow: '<button class="next-arrow"><i class="fas fa-arrow-right"></i></button>',
+    });
 
 
     $(".contact__slider").slick({

@@ -45,7 +45,10 @@ img {
   max-width: 100%; }
 
 body {
-  font-family: var(--font); }
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400; }
 
 .container {
   max-width: 1170px !important;
@@ -112,7 +115,14 @@ h6 {
   font-size: 22px; }
 
 .fs-20 {
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 34px; }
+
+.fs-18 {
+  font-size: 18px; }
+
+.fs-14 {
+  font-size: 14px; }
 
 .fs-24 {
   font-size: 24px; }
@@ -255,6 +265,9 @@ select:focus {
     background: transparent; }
   .custom_dots .slick-dots li.slick-active span {
     background: var(--primary-color); }
+
+.fs-42 {
+  font-size: 42px; }
 
 .ptb-115 {
   padding: 115px 0; }
@@ -2654,7 +2667,11 @@ footer .footer_bottom {
   padding: 20px;
   text-transform: capitalize; }
 
+<<<<<<< Updated upstream
 .km_form form input {
+=======
+.main__form input {
+>>>>>>> Stashed changes
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2664,11 +2681,19 @@ footer .footer_bottom {
   border: none;
   text-transform: capitalize;
   border: 1px solid transparent; }
+<<<<<<< Updated upstream
   .km_form form input:focus {
     background: transparent;
     border: 1px solid #f1f1f1; }
 
 .km_form form textarea {
+=======
+  .main__form input:focus {
+    background: transparent;
+    border: 1px solid #f1f1f1; }
+
+.main__form textarea {
+>>>>>>> Stashed changes
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2678,11 +2703,19 @@ footer .footer_bottom {
   padding: 20px;
   text-transform: capitalize; }
 
+<<<<<<< Updated upstream
 .km_form .km__form__content {
   background: var(--primary-color);
   padding: 35px 30px; }
 
 .km_form .km__addresa {
+=======
+.km__form__content {
+  background: var(--primary-color);
+  padding: 35px 30px; }
+
+.km__addresa {
+>>>>>>> Stashed changes
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2697,25 +2730,100 @@ footer .footer_bottom {
   gap: 15px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+<<<<<<< Updated upstream
   .km_form .km__addresa i {
     color: var(--white); }
   .km_form .km__addresa span {
+=======
+  .km__addresa i {
+    color: var(--white); }
+  .km__addresa span {
+>>>>>>> Stashed changes
     font-size: 18px;
     line-height: 26px;
     text-transform: capitalize;
     color: var(--white);
     font-weight: 600; }
 
+<<<<<<< Updated upstream
 .km_form .km__form__content .sub__title {
+=======
+.km__form__content .sub__title {
+>>>>>>> Stashed changes
   color: var(--white);
   font-weight: 700;
   line-height: 28px;
   font-size: 18px;
   text-transform: capitalize; }
 
+<<<<<<< Updated upstream
 .km_form .km__form__content p {
   color: #f1f1f1; }
 
+=======
+.km__form__content p {
+  color: #f1f1f1; }
+
+.sub_slider {
+  position: relative;
+  border: 1px solid transparent; }
+  .sub_slider .slick-active img {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%; }
+  .sub_slider .prev-arrow,
+  .sub_slider .next-arrow {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    height: 40px;
+    width: 40px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 14px;
+    border: none;
+    z-index: 10; }
+    .sub_slider .prev-arrow:hover,
+    .sub_slider .next-arrow:hover {
+      background: var(--primary-color); }
+  .sub_slider .prev-arrow {
+    right: 50px; }
+
+/**************************write__comments__form********************************/
+.write__comment__form form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize; }
+  .write__comment__form form input:focus {
+    background: #F1F1F1; }
+
+.write__comment__form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize; }
+  .write__comment__form form textarea:focus {
+    background: #F1F1F1;
+    outline: none; }
+
+>>>>>>> Stashed changes
 .km__post__content p {
   margin-bottom: 10px; }
 
@@ -2847,6 +2955,15 @@ footer .footer_bottom {
 .tags h6 {
   font-size: 20px; }
 
+.km__mark {
+  background: var(--primary-color);
+  padding: 30px; }
+  .km__mark p {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px; }
+
 .spacer {
   width: 100%;
   border-bottom: 2px solid #dbdbdb;
@@ -2862,3 +2979,121 @@ footer .footer_bottom {
   color: #111111; }
   .sheare__btn:hover {
     color: var(--primary-color); }
+<<<<<<< Updated upstream
+=======
+
+.km__blockquote__box {
+  border: 1px solid var(--primary-color);
+  padding: 22px 30px; }
+  @media (max-width: 767.98px) {
+    .km__blockquote__box .wrap {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.social__icons li a {
+  width: 35px;
+  height: 35px;
+  background: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--white);
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base); }
+  .social__icons li a:hover {
+    background: var(--secondary-color); }
+
+.next__btn .prev {
+  padding: 10px 30px;
+  background: var(--primary-color); }
+  .next__btn .prev span {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: inline-block;
+    margin-bottom: 24px;
+    text-transform: capitalize; }
+  .next__btn .prev p {
+    color: var(--white); }
+
+.next__btn .next {
+  padding: 10px 30px;
+  background: var(--secondary-color); }
+  .next__btn .next span {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: inline-block;
+    margin-bottom: 24px;
+    text-transform: capitalize; }
+  .next__btn .next p {
+    color: var(--white); }
+
+@media (max-width: 767.98px) {
+  .next__btn {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+.km__reaplay__chats li {
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  padding: 10px 120px 10px 30px;
+  margin-bottom: 30px; }
+  @media (max-width: 767.98px) {
+    .km__reaplay__chats li {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 20px; } }
+
+.comments__text strong {
+  font-size: 20px;
+  font-weight: 500; }
+
+.comments__text span {
+  color: var(--primary-color); }
+
+.r__btn {
+  border: none;
+  color: var(--primary-color);
+  background: transparent;
+  text-transform: capitalize;
+  font-weight: 600;
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base); }
+  .r__btn:hover {
+    color: var(--secondary-color); }
+
+/*******************pc-list***************************/
+.pc-list {
+  padding: 0; }
+  .pc-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; }
+    .pc-list li span i {
+      color: var(--primary-color); }
+
+/*****************website__title***********************/
+.website__title h2 span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+>>>>>>> Stashed changes

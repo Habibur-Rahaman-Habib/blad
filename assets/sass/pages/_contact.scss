@@ -4,7 +4,10 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .km_form {
   input {
     width: 100%;
@@ -28,6 +31,7 @@
     padding: 20px;
     text-transform: capitalize;
   }
+<<<<<<< Updated upstream
   form {
     input {
       width: 100%;
@@ -42,6 +46,23 @@
         background: transparent;
         border: 1px solid #f1f1f1;
       }
+=======
+}
+.main__form{
+    input{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding:20px;
+        background: #f1f1f1;
+        border: none;
+        text-transform: capitalize;
+        border: 1px solid transparent;
+        &:focus{
+            background: transparent;
+            border: 1px solid #f1f1f1;
+        }
+>>>>>>> Stashed changes
     }
     textarea {
       width: 100%;
@@ -76,7 +97,11 @@
       color: var(--white);
       font-weight: 600;
     }
+<<<<<<< Updated upstream
   }
+=======
+ }
+>>>>>>> Stashed changes
 
   .km__form__content {
     .sub__title {
@@ -89,5 +114,79 @@
     p {
       color: #f1f1f1;
     }
+<<<<<<< Updated upstream
   }
 }
+=======
+ }
+
+ .sub_slider{
+  position: relative;
+  border: 1px solid transparent;
+  .slick-active{
+    img{
+      border: 1px solid var(--primary-color);
+      border-radius: 50%;
+    }
+  }
+  .prev-arrow,
+  .next-arrow{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    height: 40px;
+    width: 40px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 14px;
+    border: none;
+    z-index: 10;
+    &:hover{
+      background: var(--primary-color);
+    }
+  }
+  .prev-arrow{
+    right: 50px;
+  }
+ }
+
+
+ /**************************write__comments__form********************************/
+ .write__comment__form{
+    form{
+      input{
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+        margin-bottom: 20px;
+        padding: 13px;
+        color: #8c8c8c;
+        font-weight: 400;
+        text-transform: capitalize;
+        &:focus{
+          background: #F1F1F1;
+        }
+      }
+      textarea{
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+        margin-bottom: 20px;
+        padding: 13px;
+        color: #8c8c8c;
+        font-weight: 400;
+        text-transform: capitalize;
+        &:focus{
+          background: #F1F1F1;
+          outline: none;
+        }
+      }
+    }
+ }
+
+>>>>>>> Stashed changes

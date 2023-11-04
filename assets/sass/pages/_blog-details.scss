@@ -23,6 +23,17 @@
     }
 }
 
+.km__mark{
+    background: var(--primary-color);
+    padding: 30px;
+    p{
+        color: var(--white);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 34px;
+    }
+}
+
 .spacer{
     width: 100%;
     border-bottom: 2px solid #dbdbdb;
@@ -37,5 +48,106 @@
     color: #111111;
     &:hover{
         color: var(--primary-color);
+    }
+}
+
+.km__blockquote__box{
+    border: 1px solid var(--primary-color);
+    padding: 22px 30px;
+    @include screen-768{
+        .wrap{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.social__icons{
+    li{
+        a{
+            width: 35px;
+            height: 35px;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition-base);
+            &:hover{
+                background: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.next__btn{
+    .prev{
+        padding: 10px 30px;
+        background: var(--primary-color);
+        span{
+            color: var(--white);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            display: inline-block;
+            margin-bottom: 24px;
+            text-transform: capitalize;
+        }
+        p{
+            color: var(--white);
+        }
+    }
+    .next{
+        padding: 10px 30px;
+        background: var(--secondary-color);
+        span{
+            color: var(--white);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            display: inline-block;
+            margin-bottom: 24px;
+            text-transform: capitalize;
+        }
+        p{
+            color: var(--white);
+        }
+    }
+    @include screen-768{
+        flex-wrap: wrap;
+    }
+}
+
+.km__reaplay__chats{
+    li{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+        padding: 10px 120px 10px 30px;
+        margin-bottom: 30px;
+        @include screen-768{
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+    }
+}
+
+.comments__text{
+    strong{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    span{
+        color: var(--primary-color);
+    }
+}
+
+.r__btn{
+    border: none;
+    color: var(--primary-color);
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: var(--transition-base);
+    &:hover{
+        color: var(--secondary-color);
     }
 }
