@@ -1,0 +1,41 @@
+/******************fc-list************************/
+.fc-list{
+    display: flex;
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    li{
+        width: calc(50% - 12px);
+        i{
+            color: var(--primary-color);
+        }
+        span{
+            color: var(--primary-color);
+        }
+    }
+}
+
+.tags{
+    h6{
+        font-size: 20px;
+    }
+}
+
+.spacer{
+    width: 100%;
+    border-bottom: 2px solid #dbdbdb;
+    display: block;
+    opacity: 0.6;
+}
+
+.sheare__btn{
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: var(--transition-base);
+    color: #111111;
+    &:hover{
+        color: var(--primary-color);
+    }
+}

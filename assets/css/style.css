@@ -350,6 +350,9 @@ select:focus {
 .gap-40 {
   gap: 40px; }
 
+.gap-15 {
+  gap: 15px; }
+
 /*********** theme css **********/
 .container {
   padding: 0 12px; }
@@ -827,6 +830,7 @@ header .header_top {
   -o-transition: var(--transition);
   transition: var(--transition);
   position: relative;
+<<<<<<< Updated upstream
   z-index: 1;
   font-weight: 500; }
   .primary__btn:hover::before {
@@ -843,6 +847,112 @@ header .header_top {
     -webkit-transition: var(--transition);
     -o-transition: var(--transition);
     transition: var(--transition); }
+=======
+  z-index: 1; }
+  .primary__btn:hover::after {
+    width: 100%; }
+  .primary__btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    -webkit-transition: var(--transition_base);
+    -o-transition: var(--transition_base);
+    transition: var(--transition_base); }
+
+/*******************contact__btn*******************/
+.contact__btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1; }
+  .contact__btn:hover::after {
+    width: 100%; }
+  .contact__btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    -webkit-transition: var(--transition_base);
+    -o-transition: var(--transition_base);
+    transition: var(--transition_base); }
+
+.social-btn {
+  width: 180px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: var(--transition_base);
+  -o-transition: var(--transition_base);
+  transition: var(--transition_base);
+  position: relative;
+  z-index: 1; }
+  .social-btn:hover::after {
+    width: 100%; }
+  .social-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    -webkit-transition: var(--transition_base);
+    -o-transition: var(--transition_base);
+    transition: var(--transition_base); }
+
+.tags__btn {
+  background: #f1f1f1;
+  width: 90px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #111111; }
+>>>>>>> Stashed changes
 
 footer .footer_top {
   padding-top: 115px;
@@ -2463,10 +2573,16 @@ footer .footer_bottom {
   padding: 20px;
   background: #f1f1f1;
   border: none;
+<<<<<<< Updated upstream
   text-transform: capitalize; }
   .km_form input:focus {
+=======
+  text-transform: capitalize;
+  border: 1px solid transparent; }
+  form input:focus {
+>>>>>>> Stashed changes
     background: transparent;
-    border: 1px solid var(--secondary-color); }
+    border: 1px solid #f1f1f1; }
 
 .km_form textarea {
   width: 100%;
@@ -2478,6 +2594,7 @@ footer .footer_bottom {
   padding: 20px;
   text-transform: capitalize; }
 
+<<<<<<< Updated upstream
 .km__post__content p {
   margin-bottom: 10px; }
 
@@ -2584,3 +2701,82 @@ footer .footer_bottom {
 
 .error .error_detail a {
   font-size: 600; }
+=======
+.km__form__content {
+  background: var(--primary-color);
+  padding: 35px 30px; }
+
+.km__addresa {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .km__addresa i {
+    color: var(--white); }
+  .km__addresa span {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 600; }
+
+.km__form__content .sub__title {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 18px;
+  text-transform: capitalize; }
+
+.km__form__content p {
+  color: #f1f1f1; }
+
+/******************fc-list************************/
+.fc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 250px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  gap: 20px; }
+  .fc-list li {
+    width: calc(50% - 12px); }
+    .fc-list li i {
+      color: var(--primary-color); }
+    .fc-list li span {
+      color: var(--primary-color); }
+
+.tags h6 {
+  font-size: 20px; }
+
+.spacer {
+  width: 100%;
+  border-bottom: 2px solid #dbdbdb;
+  display: block;
+  opacity: 0.6; }
+
+.sheare__btn {
+  font-weight: 500;
+  text-transform: capitalize;
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base);
+  color: #111111; }
+  .sheare__btn:hover {
+    color: var(--primary-color); }
+>>>>>>> Stashed changes
