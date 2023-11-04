@@ -1,124 +1,74 @@
 /******************km__contact__form******************/
-.km__contact__form {
+.km__contact__form{
   padding: 60px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
-.km_form {
-  input {
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: #f1f1f1;
-    border: none;
-    text-transform: capitalize;
-    &:focus {
-      background: transparent;
-      border: 1px solid var(--secondary-color);
-    }
-  }
-  textarea {
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background: #f1f1f1;
-    border: none;
-    padding: 20px;
-    text-transform: capitalize;
-  }
-<<<<<<< Updated upstream
-  form {
-    input {
+form{
+  input{
       width: 100%;
       box-sizing: border-box;
       margin-bottom: 20px;
-      padding: 20px;
+      padding:20px;
       background: #f1f1f1;
       border: none;
       text-transform: capitalize;
       border: 1px solid transparent;
-      &:focus {
-        background: transparent;
-        border: 1px solid #f1f1f1;
+      &:focus{
+          background: transparent;
+          border: 1px solid #f1f1f1;
       }
-=======
-}
-.main__form{
-    input{
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        padding:20px;
-        background: #f1f1f1;
-        border: none;
-        text-transform: capitalize;
-        border: 1px solid transparent;
-        &:focus{
-            background: transparent;
-            border: 1px solid #f1f1f1;
-        }
->>>>>>> Stashed changes
-    }
-    textarea {
+  }
+  textarea{
       width: 100%;
       box-sizing: border-box;
       margin-bottom: 20px;
       background: #f1f1f1;
       border: none;
-      padding: 20px;
+      padding:20px;
       text-transform: capitalize;
-    }
   }
+  
+}
 
-  .km__form__content {
-    background: var(--primary-color);
-    padding: 35px 30px;
-  }
+.km__form__content{
+  background: var(--primary-color);
+  padding: 35px 30px;
+}
 
-  .km__addresa {
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0;
-    gap: 15px;
-    flex-wrap: wrap;
-    i {
+.km__addresa{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  i{
       color: var(--white);
-    }
-    span {
+  }
+  span{
       font-size: 18px;
       line-height: 26px;
       text-transform: capitalize;
       color: var(--white);
       font-weight: 600;
-    }
-<<<<<<< Updated upstream
   }
-=======
- }
->>>>>>> Stashed changes
+}
 
-  .km__form__content {
-    .sub__title {
+.km__form__content{
+  .sub__title{
       color: var(--white);
       font-weight: 700;
       line-height: 28px;
       font-size: 18px;
       text-transform: capitalize;
-    }
-    p {
-      color: #f1f1f1;
-    }
-<<<<<<< Updated upstream
+  }
+  p{
+      color: #f1f1f1;;
   }
 }
-=======
- }
+
 
  .sub_slider{
   position: relative;
@@ -189,4 +139,3 @@
     }
  }
 
->>>>>>> Stashed changes
