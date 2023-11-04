@@ -10,7 +10,6 @@ Version: 1.0.0
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 :root {
   --primary-color: #ea062b;
-  --second-color: #111111;
   --secondary-color: #111111;
   --white: #fff;
   --gray: #e7e7e7;
@@ -334,6 +333,75 @@ select:focus {
 
 .mb-30 {
   margin-bottom: 25px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+.gap-30 {
+  gap: 30px; }
+
+.gap-40 {
+  gap: 40px; }
+
+.pt-30 {
+  padding-top: 30px; }
+
+.pt-40 {
+  padding-top: 40px; }
+
+.pb-30 {
+  padding-bottom: 30px; }
+
+.ptb-40 {
+  padding: 40px 0px; }
+
+.pb-40 {
+  padding-bottom: 40px; }
+
+.pb-60 {
+  padding-bottom: 60px; }
+
+.pb-80 {
+  padding-bottom: 80px; }
+
+.pb-120 {
+  padding-bottom: 100px; }
+  @media (max-width: 767.98px) {
+    .pb-120 {
+      padding-bottom: 70px; } }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-32 {
+  margin-top: 32px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-60 {
+  margin-top: 60px; }
+
+.mt-80 {
+  margin-top: 80px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
 
 .mb-40 {
   margin-bottom: 40px; }
@@ -830,9 +898,10 @@ header .header_top {
   -o-transition: var(--transition);
   transition: var(--transition);
   position: relative;
-<<<<<<< Updated upstream
   z-index: 1;
-  font-weight: 500; }
+  font-weight: 500;
+  position: relative;
+  z-index: 1; }
   .primary__btn:hover::before {
     width: 100%; }
   .primary__btn::before {
@@ -847,8 +916,6 @@ header .header_top {
     -webkit-transition: var(--transition);
     -o-transition: var(--transition);
     transition: var(--transition); }
-=======
-  z-index: 1; }
   .primary__btn:hover::after {
     width: 100%; }
   .primary__btn::after {
@@ -952,7 +1019,6 @@ header .header_top {
   font-weight: 500;
   text-transform: capitalize;
   color: #111111; }
->>>>>>> Stashed changes
 
 footer .footer_top {
   padding-top: 115px;
@@ -2573,16 +2639,10 @@ footer .footer_bottom {
   padding: 20px;
   background: #f1f1f1;
   border: none;
-<<<<<<< Updated upstream
   text-transform: capitalize; }
   .km_form input:focus {
-=======
-  text-transform: capitalize;
-  border: 1px solid transparent; }
-  form input:focus {
->>>>>>> Stashed changes
     background: transparent;
-    border: 1px solid #f1f1f1; }
+    border: 1px solid var(--secondary-color); }
 
 .km_form textarea {
   width: 100%;
@@ -2594,7 +2654,68 @@ footer .footer_bottom {
   padding: 20px;
   text-transform: capitalize; }
 
-<<<<<<< Updated upstream
+.km_form form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f1f1f1;
+  border: none;
+  text-transform: capitalize;
+  border: 1px solid transparent; }
+  .km_form form input:focus {
+    background: transparent;
+    border: 1px solid #f1f1f1; }
+
+.km_form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  border: none;
+  padding: 20px;
+  text-transform: capitalize; }
+
+.km_form .km__form__content {
+  background: var(--primary-color);
+  padding: 35px 30px; }
+
+.km_form .km__addresa {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .km_form .km__addresa i {
+    color: var(--white); }
+  .km_form .km__addresa span {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 600; }
+
+.km_form .km__form__content .sub__title {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 18px;
+  text-transform: capitalize; }
+
+.km_form .km__form__content p {
+  color: #f1f1f1; }
+
 .km__post__content p {
   margin-bottom: 10px; }
 
@@ -2701,44 +2822,6 @@ footer .footer_bottom {
 
 .error .error_detail a {
   font-size: 600; }
-=======
-.km__form__content {
-  background: var(--primary-color);
-  padding: 35px 30px; }
-
-.km__addresa {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 0;
-  gap: 15px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  .km__addresa i {
-    color: var(--white); }
-  .km__addresa span {
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: capitalize;
-    color: var(--white);
-    font-weight: 600; }
-
-.km__form__content .sub__title {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 28px;
-  font-size: 18px;
-  text-transform: capitalize; }
-
-.km__form__content p {
-  color: #f1f1f1; }
 
 /******************fc-list************************/
 .fc-list {
@@ -2779,4 +2862,3 @@ footer .footer_bottom {
   color: #111111; }
   .sheare__btn:hover {
     color: var(--primary-color); }
->>>>>>> Stashed changes

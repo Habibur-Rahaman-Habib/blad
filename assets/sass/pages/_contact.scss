@@ -5,7 +5,6 @@
   box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
 }
 
-<<<<<<< Updated upstream
 .km_form {
   input {
     width: 100%;
@@ -29,68 +28,66 @@
     padding: 20px;
     text-transform: capitalize;
   }
-=======
-form{
-    input{
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        padding:20px;
-        background: #f1f1f1;
-        border: none;
-        text-transform: capitalize;
-        border: 1px solid transparent;
-        &:focus{
-            background: transparent;
-            border: 1px solid #f1f1f1;
-        }
+  form {
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #f1f1f1;
+      border: none;
+      text-transform: capitalize;
+      border: 1px solid transparent;
+      &:focus {
+        background: transparent;
+        border: 1px solid #f1f1f1;
+      }
     }
-    textarea{
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        background: #f1f1f1;
-        border: none;
-        padding:20px;
-        text-transform: capitalize;
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      background: #f1f1f1;
+      border: none;
+      padding: 20px;
+      text-transform: capitalize;
     }
-    
-}
+  }
 
-.km__form__content{
+  .km__form__content {
     background: var(--primary-color);
     padding: 35px 30px;
-}
+  }
 
-.km__addresa{
+  .km__addresa {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
     padding: 0;
     gap: 15px;
     flex-wrap: wrap;
-    i{
-        color: var(--white);
+    i {
+      color: var(--white);
     }
-    span{
-        font-size: 18px;
-        line-height: 26px;
-        text-transform: capitalize;
-        color: var(--white);
-        font-weight: 600;
+    span {
+      font-size: 18px;
+      line-height: 26px;
+      text-transform: capitalize;
+      color: var(--white);
+      font-weight: 600;
     }
-}
+  }
 
-.km__form__content{
-    .sub__title{
-        color: var(--white);
-        font-weight: 700;
-        line-height: 28px;
-        font-size: 18px;
-        text-transform: capitalize;
+  .km__form__content {
+    .sub__title {
+      color: var(--white);
+      font-weight: 700;
+      line-height: 28px;
+      font-size: 18px;
+      text-transform: capitalize;
     }
-    p{
-        color: #f1f1f1;;
+    p {
+      color: #f1f1f1;
     }
->>>>>>> Stashed changes
+  }
 }

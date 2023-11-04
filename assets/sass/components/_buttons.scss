@@ -24,7 +24,6 @@
     left: 0;
     top: 0;
     transition: var(--transition);
-<<<<<<< Updated upstream
   }
 }
 
@@ -79,102 +78,98 @@
     top: 0;
     transition: var(--transition);
   }
-=======
-    position: relative;
-    z-index: 1;
-    &:hover{
-        &::after{
-            width: 100%;
-        }
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::after {
+      width: 100%;
     }
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: black;
-        z-index: -1;
-        transition: var(--transition_base);
-    }
->>>>>>> Stashed changes
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: var(--transition_base);
+  }
 }
 
 /*******************contact__btn*******************/
-.contact__btn{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border: none;
-    background: var(--primary-color);
-    color: var(--white);
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: capitalize;
-    position: relative;
-    z-index: 1;
-    &:hover{
-        &::after{
-            width: 100%;
-        }
+.contact__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::after {
+      width: 100%;
     }
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: black;
-        z-index: -1;
-        transition: var(--transition_base);
-    }
-}
-
-
-.social-btn{
-    width: 180px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-color);
-    color: var(--white);
-    font-size: 18px;
-    font-weight: 600;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
     transition: var(--transition_base);
-    position: relative;
-    z-index: 1;
-    &:hover{
-        &::after{
-            width: 100%;
-        }
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: black;
-        z-index: -1;
-        transition: var(--transition_base);
-    }
+  }
 }
 
+.social-btn {
+  width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  transition: var(--transition_base);
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: var(--transition_base);
+  }
+}
 
-.tags__btn{
-    background: #f1f1f1;
-    width: 90px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: #111111;
+.tags__btn {
+  background: #f1f1f1;
+  width: 90px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #111111;
 }
