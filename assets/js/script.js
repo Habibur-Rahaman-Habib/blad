@@ -19,7 +19,9 @@
         16. Count Down
         17. Accordion Boxs
     */
-
+   
+    //nice select
+    $('select').niceSelect();
 
     //fancy box video popup 
     Fancybox.bind("[data-fancybox]", {
@@ -168,6 +170,18 @@
         arrows: false,
         slidesToScroll: 1,
     });
+
+
+
+
+
+
+
+
+
+
+
+
 
 })(jQuery);
 

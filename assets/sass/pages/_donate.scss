@@ -1,0 +1,30 @@
+/**************************donate__form***********************/
+.donate__form{
+    border: 1px solid var(--border-color);
+    padding: 30px;
+}
+.current{
+    box-shadow: none;
+    background: transparent;
+    font-weight: 400;
+    @include portrait-phone{
+        padding: 0;
+    }
+}
+.km__nice__select{
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+.nice-select{
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    float: none;
+    &:hover{
+        border-color: var(--primary-color);
+    }
+    @include portrait-phone{
+        padding: 0 5px;
+    }
+}

@@ -19,7 +19,7 @@ Version: 1.0.0
   --transition: all 0.3s ease-in;
   --font: "Jost", sans-serif;
   --p-color: #666666;
-  --border-color: #6d6d6d;
+  --border-color: #cacaca;
   --shadow: 0px 0px 20px #0000002b;
   --transition_base: 0.3s;
   --gray_bg: #f9f9f9; }
@@ -1473,6 +1473,29 @@ footer .footer_bottom {
   .km__submit__form form textarea:focus {
     background: #F1F1F1;
     outline: none; }
+
+/**************************Donate Now*********************/
+.donate__form form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: 1px solid var(--border-color); }
+
+.donate__form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: 1px solid var(--border-color); }
 
 /******* page styles *************/
 .explore_now {
@@ -3161,3 +3184,34 @@ footer .footer_bottom {
 /*********************accordion*******************************/
 .km__submit__section {
   background: #f9f9f9; }
+
+/**************************donate__form***********************/
+.donate__form {
+  border: 1px solid var(--border-color);
+  padding: 30px; }
+
+.current {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  font-weight: 400; }
+  @media (max-width: 575.98px) {
+    .current {
+      padding: 0; } }
+
+.km__nice__select {
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 60px; }
+
+.nice-select {
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  float: none; }
+  .nice-select:hover {
+    border-color: var(--primary-color); }
+  @media (max-width: 575.98px) {
+    .nice-select {
+      padding: 0 5px; } }
