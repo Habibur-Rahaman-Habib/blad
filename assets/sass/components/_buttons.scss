@@ -191,3 +191,36 @@
   text-transform: capitalize;
   color: #111111;
 }
+
+
+.customs__btn{
+  width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  transition: var(--transition_base);
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--secondary-color);
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    transition: var(--transition_base);
+  }
+}

@@ -137,3 +137,27 @@
   }
  }
 
+
+ /***********************search__widget**************************/
+ .search__widget{
+  form{
+    display: flex;
+    align-items: center;
+    input{
+      width: 100%;
+      padding: 20px;
+      border: none;
+      background: #f9f9f9;
+    }
+    .bl-submit-btn{
+      width: 65px;
+      height: 65px;
+      background: var(--primary-color);
+      border: none;
+      i{
+        color: var(--white);
+      }
+    }
+  }
+ }
+
