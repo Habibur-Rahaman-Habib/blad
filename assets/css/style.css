@@ -1375,6 +1375,105 @@ footer .footer_bottom {
     .page_pagination ul li a i {
       font-size: 20px; }
 
+/******************km__contact__form******************/
+.km__contact__form {
+  padding: 60px;
+  background-color: white;
+  -webkit-box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
+  box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15); }
+
+.main-form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f1f1f1;
+  border: none;
+  text-transform: capitalize;
+  border: 1px solid transparent; }
+  .main-form input:focus {
+    background: transparent;
+    border: 1px solid #f1f1f1; }
+
+.main-form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  border: none;
+  padding: 20px;
+  text-transform: capitalize; }
+
+/**************************write__comments__form********************************/
+.write__comment__form form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize; }
+  .write__comment__form form input:focus {
+    background: #F1F1F1; }
+
+.write__comment__form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize; }
+  .write__comment__form form textarea:focus {
+    background: #F1F1F1;
+    outline: none; }
+
+/*****************************km__submit__form***************************/
+.km__submit__form form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize; }
+  .km__submit__form form input:focus {
+    background: #F1F1F1; }
+
+.km__submit__form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize; }
+  .km__submit__form form textarea:focus {
+    background: #F1F1F1;
+    outline: none; }
+
 /******* page styles *************/
 .explore_now {
   width: 190px;
@@ -2725,37 +2824,6 @@ footer .footer_bottom {
   line-height: 28px;
   text-transform: capitalize; }
 
-/******************km__contact__form******************/
-.km__contact__form {
-  padding: 60px;
-  background-color: white;
-  -webkit-box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
-  box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15); }
-
-form input {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 20px;
-  background: #f1f1f1;
-  border: none;
-  text-transform: capitalize;
-  border: 1px solid transparent; }
-  form input:focus {
-    background: transparent;
-    border: 1px solid #f1f1f1; }
-
-form textarea {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  background: #f1f1f1;
-  border: none;
-  padding: 20px;
-  text-transform: capitalize; }
-
 .km__form__content {
   background: var(--primary-color);
   padding: 35px 30px; }
@@ -2818,40 +2886,6 @@ form textarea {
       background: var(--primary-color); }
   .sub_slider .prev-arrow {
     right: 50px; }
-
-/**************************write__comments__form********************************/
-.write__comment__form form input {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: none;
-  background-color: white;
-  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
-  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
-  margin-bottom: 20px;
-  padding: 13px;
-  color: #8c8c8c;
-  font-weight: 400;
-  text-transform: capitalize; }
-  .write__comment__form form input:focus {
-    background: #F1F1F1; }
-
-.write__comment__form form textarea {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: none;
-  background-color: white;
-  -webkit-box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
-  box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
-  margin-bottom: 20px;
-  padding: 13px;
-  color: #8c8c8c;
-  font-weight: 400;
-  text-transform: capitalize; }
-  .write__comment__form form textarea:focus {
-    background: #F1F1F1;
-    outline: none; }
 
 .km__post__content p {
   margin-bottom: 10px; }
@@ -3123,3 +3157,7 @@ form textarea {
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 30px; }
+
+/*********************accordion*******************************/
+.km__submit__section {
+  background: #f9f9f9; }
