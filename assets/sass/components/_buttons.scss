@@ -224,3 +224,11 @@
     transition: var(--transition_base);
   }
 }
+
+.readmore__btn{
+  color: var(--secondary-color);
+  transition: var(--transition);
+  &:hover{
+    color: var(--primary-color);
+  }
+}

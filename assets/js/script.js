@@ -167,6 +167,14 @@
         slidesToScroll: 1,
     });
 
+    $(".km_blog__slider").slick({
+        slidesToShow: 1,
+        arrows: true,
+        slidesToScroll: 1,
+        prevArrow: '<button class="prev-arrow"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow: '<button class="next-arrow"><i class="fas fa-arrow-right"></i></button>',
+    });
+
     //nice select
     $('select').niceSelect();
 
