@@ -161,3 +161,22 @@
   }
  }
 
+
+
+
+/******************km__register__box **********************/
+.km__form__box{
+  border: 1px solid var(--border-color);
+  padding: 60px 40px;
+  form{
+    input{
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+    }
+    label{
+      text-align: left;
+    }
+  }
+}
+

@@ -1569,6 +1569,18 @@ footer .footer_bottom {
     .search__widget form .bl-submit-btn i {
       color: var(--white); }
 
+/******************km__register__box **********************/
+.km__form__box {
+  border: 1px solid var(--border-color);
+  padding: 60px 40px; }
+  .km__form__box form input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block; }
+  .km__form__box form label {
+    text-align: left; }
+
 /******* page styles *************/
 .explore_now {
   width: 190px;
