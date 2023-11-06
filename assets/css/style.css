@@ -122,8 +122,15 @@ h6 {
 .fs-18 {
   font-size: 18px; }
 
+.fss-18 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize; }
+
 .fs-14 {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 32px; }
 
 .fs-24 {
   font-size: 24px; }
@@ -461,6 +468,9 @@ select:focus {
   @media (max-width: 767.98px) {
     .pb-120 {
       padding-bottom: 70px; } }
+
+.mb-10 {
+  margin-bottom: 10px; }
 
 .mt-20 {
   margin-top: 20px; }
@@ -1172,6 +1182,44 @@ header .header_top {
   .readmore__btn:hover {
     color: var(--primary-color); }
 
+/*********************km__register__btn*******************/
+.km__register__btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 7px 15px;
+  background: var(--secondary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: var(--transition_base);
+  -o-transition: var(--transition_base);
+  transition: var(--transition_base);
+  position: relative;
+  z-index: 1;
+  border: none; }
+  .km__register__btn:hover::after {
+    width: 100%; }
+  .km__register__btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    -webkit-transition: var(--transition_base);
+    -o-transition: var(--transition_base);
+    transition: var(--transition_base); }
+
 footer .footer_top {
   padding-top: 115px;
   background: var(--secondary-color); }
@@ -1572,14 +1620,22 @@ footer .footer_bottom {
 /******************km__register__box **********************/
 .km__form__box {
   border: 1px solid var(--border-color);
-  padding: 60px 40px; }
+  padding: 48px 40px; }
   .km__form__box form input {
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    display: block; }
+    display: block;
+    padding: 4px 15px;
+    border: 1px solid var(--border-color); }
   .km__form__box form label {
     text-align: left; }
+  .km__form__box form select {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 7px 15px; }
+    .km__form__box form select:focus {
+      outline: none; }
 
 /******* page styles *************/
 .explore_now {

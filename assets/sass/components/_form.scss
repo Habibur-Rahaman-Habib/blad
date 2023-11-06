@@ -167,15 +167,25 @@
 /******************km__register__box **********************/
 .km__form__box{
   border: 1px solid var(--border-color);
-  padding: 60px 40px;
+  padding: 48px 40px;
   form{
     input{
       width: 100%;
       box-sizing: border-box;
       display: block;
+      padding:4px 15px;
+      border: 1px solid var(--border-color);
     }
     label{
       text-align: left;
+    }
+    select{
+      width: 100%;
+      border: 1px solid var(--border-color);
+      padding: 7px 15px;
+      &:focus{
+        outline: none;
+      }
     }
   }
 }
