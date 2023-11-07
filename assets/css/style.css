@@ -135,6 +135,9 @@ h6 {
 .fs-24 {
   font-size: 24px; }
 
+.fs-28 {
+  font-size: 28px; }
+
 .fw-5 {
   font-weight: 500; }
 
@@ -1220,6 +1223,44 @@ header .header_top {
     -o-transition: var(--transition_base);
     transition: var(--transition_base); }
 
+/************************sd__service_btn*******************************/
+.sd__service_btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 11px 15px;
+  background: var(--secondary-color);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: var(--transition_base);
+  -o-transition: var(--transition_base);
+  transition: var(--transition_base);
+  position: relative;
+  z-index: 1;
+  border: none; }
+  .sd__service_btn:hover::after {
+    width: 100%; }
+  .sd__service_btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    -webkit-transition: var(--transition_base);
+    -o-transition: var(--transition_base);
+    transition: var(--transition_base); }
+
 footer .footer_top {
   padding-top: 115px;
   background: var(--secondary-color); }
@@ -1584,6 +1625,8 @@ footer .footer_bottom {
   font-weight: 400;
   text-transform: capitalize;
   border: 1px solid var(--border-color); }
+  .donate__form form input:focus {
+    border: 1px solid var(--primary-color); }
 
 .donate__form form textarea {
   width: 100%;
@@ -1594,7 +1637,9 @@ footer .footer_bottom {
   color: #8c8c8c;
   font-weight: 400;
   text-transform: capitalize;
-  border: 1px solid var(--border-color); }
+  outline: none; }
+  .donate__form form textarea:focus {
+    border: 1px solid var(--primary-color); }
 
 /***********************search__widget**************************/
 .search__widget form {
@@ -1628,6 +1673,8 @@ footer .footer_bottom {
     display: block;
     padding: 4px 15px;
     border: 1px solid var(--border-color); }
+    .km__form__box form input:focus {
+      border: 1px solid var(--primary-color); }
   .km__form__box form label {
     text-align: left; }
   .km__form__box form select {
@@ -1636,6 +1683,36 @@ footer .footer_bottom {
     padding: 7px 15px; }
     .km__form__box form select:focus {
       outline: none; }
+
+/***********************km__sd__form****************************/
+.km__sd__form form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 10px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: 1px solid var(--border-color);
+  background: var(--white); }
+  .km__sd__form form input:focus {
+    border: 1px solid var(--primary-color); }
+
+.km__sd__form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 13px;
+  color: #8c8c8c;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: 1px solid var(--border-color);
+  background: var(--white);
+  outline: none; }
+  .km__sd__form form textarea:focus {
+    border: 1px solid var(--primary-color); }
 
 /******* page styles *************/
 .explore_now {
@@ -2987,6 +3064,91 @@ footer .footer_bottom {
   line-height: 28px;
   text-transform: capitalize; }
 
+/***************km__service__one***********************/
+.km__service__one {
+  background: var(--gray2);
+  padding: 30px 20px;
+  position: relative; }
+  .km__service__one::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 5px;
+    background: var(--primary-color); }
+
+.sd-service-details-list li a {
+  background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 13px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1; }
+  .sd-service-details-list li a:hover {
+    color: var(--white); }
+    .sd-service-details-list li a:hover::after {
+      width: 100%;
+      color: var(--white); }
+  .sd-service-details-list li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: -1;
+    -webkit-transition: var(--transition_base);
+    -o-transition: var(--transition_base);
+    transition: var(--transition_base); }
+
+.km__service__three {
+  background: var(--gray2);
+  padding: 30px 20px;
+  position: relative; }
+  .km__service__three::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 5px;
+    background: var(--primary-color); }
+
+/*********************km__sd__accordion****************************/
+.km__sd__accordion .accordion-item {
+  border: none;
+  -webkit-box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15); }
+  .km__sd__accordion .accordion-item + .accordion-item {
+    margin-top: 15px; }
+
+.km__sd__accordion .accordion-button {
+  font-size: 20px;
+  font-weight: 600; }
+  .km__sd__accordion .accordion-button::after {
+    background: none;
+    content: '\f0d7';
+    font-family: 'FontAwesome';
+    width: auto;
+    height: auto; }
+
+.km__sd__accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--secondary-color); }
+
 .km__form__content {
   background: var(--primary-color);
   padding: 35px 30px; }
@@ -3025,30 +3187,12 @@ footer .footer_bottom {
 .km__form__content p {
   color: #f1f1f1; }
 
-.sub_slider {
-  position: relative;
-  border: 1px solid transparent; }
-  .sub_slider .slick-active img {
-    border: 1px solid var(--primary-color);
-    border-radius: 50%; }
-  .sub_slider .prev-arrow,
-  .sub_slider .next-arrow {
-    position: absolute;
-    right: 0;
-    top: 15px;
-    height: 40px;
-    width: 40px;
-    background: var(--secondary-color);
-    border-radius: 50%;
-    color: var(--white);
-    font-size: 14px;
-    border: none;
-    z-index: 10; }
-    .sub_slider .prev-arrow:hover,
-    .sub_slider .next-arrow:hover {
-      background: var(--primary-color); }
-  .sub_slider .prev-arrow {
-    right: 50px; }
+.km__map {
+  overflow: hidden;
+  margin-bottom: -15px; }
+  .km__map iframe {
+    width: 100%;
+    height: 460px; }
 
 .km__post__content p {
   margin-bottom: 10px; }
@@ -3628,19 +3772,36 @@ footer .footer_bottom {
 .km__submit__section {
   background: #f9f9f9; }
 
+.km_accordion .accordion-item {
+  border: 0;
+  -webkit-box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15); }
+  .km_accordion .accordion-item + .accordion-item {
+    margin-top: 15px; }
+  .km_accordion .accordion-item .accordion-button {
+    font-size: 20px;
+    font-weight: 600; }
+    .km_accordion .accordion-item .accordion-button::after {
+      background: none;
+      content: '\f107';
+      font-family: 'FontAwesome';
+      width: auto;
+      height: auto; }
+  .km_accordion .accordion-item .accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--white); }
+
 /**************************donate__form***********************/
 .donate__form {
   border: 1px solid var(--border-color);
   padding: 30px; }
 
 .current {
+  padding: 0;
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: transparent;
-  font-weight: 400; }
-  @media (max-width: 575.98px) {
-    .current {
-      padding: 0; } }
+  box-shadow: none; }
+  .current:focus {
+    background: red; }
 
 .km__nice__select {
   border: 1px solid var(--border-color);
@@ -3651,10 +3812,8 @@ footer .footer_bottom {
 
 .nice-select {
   width: 100%;
-  border: 2px solid var(--primary-color);
   float: none; }
-  .nice-select:hover {
-    border-color: var(--primary-color); }
-  @media (max-width: 575.98px) {
-    .nice-select {
-      padding: 0 5px; } }
+  .nice-select .list {
+    width: 100%; }
+  .nice-select:focus {
+    border: 1px solid var(--primary-color); }

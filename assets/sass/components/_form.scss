@@ -123,6 +123,9 @@
       font-weight: 400;
       text-transform: capitalize;
       border: 1px solid var(--border-color);
+      &:focus{
+        border: 1px solid var(--primary-color);
+      }
     }
     textarea{
       width: 100%;
@@ -132,7 +135,10 @@
       color: #8c8c8c;
       font-weight: 400;
       text-transform: capitalize;
-      border: 1px solid var(--border-color);
+      outline: none;
+      &:focus{
+        border: 1px solid var(--primary-color);
+      }
     }
   }
  }
@@ -175,6 +181,9 @@
       display: block;
       padding:4px 15px;
       border: 1px solid var(--border-color);
+      &:focus{
+        border: 1px solid var(--primary-color);
+      }
     }
     label{
       text-align: left;
@@ -185,6 +194,42 @@
       padding: 7px 15px;
       &:focus{
         outline: none;
+      }
+    }
+  }
+}
+
+
+/***********************km__sd__form****************************/
+.km__sd__form{
+  form{
+    input{
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+      padding: 10px;
+      color: #8c8c8c;
+      font-weight: 400;
+      text-transform: capitalize;
+      border: 1px solid var(--border-color);
+      background: var(--white);
+      &:focus{
+        border: 1px solid var(--primary-color);
+      }
+    }
+    textarea{
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      padding: 13px;
+      color: #8c8c8c;
+      font-weight: 400;
+      text-transform: capitalize;
+      border: 1px solid var(--border-color);
+      background: var(--white);
+      outline: none;
+      &:focus{
+        border: 1px solid var(--primary-color);
       }
     }
   }

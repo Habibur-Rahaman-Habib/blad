@@ -4,11 +4,10 @@
     padding: 30px;
 }
 .current{
+    padding: 0;
     box-shadow: none;
-    background: transparent;
-    font-weight: 400;
-    @include portrait-phone{
-        padding: 0;
+    &:focus{
+        background: red;
     }
 }
 .km__nice__select{
@@ -19,12 +18,11 @@
 }
 .nice-select{
     width: 100%;
-    border: 2px solid var(--primary-color);
     float: none;
-    &:hover{
-        border-color: var(--primary-color);
+    .list{
+        width: 100%;
     }
-    @include portrait-phone{
-        padding: 0 5px;
+    &:focus{
+        border: 1px solid var(--primary-color);
     }
 }
