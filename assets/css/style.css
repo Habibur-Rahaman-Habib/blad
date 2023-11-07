@@ -3187,6 +3187,9 @@ footer .footer_bottom {
 .km__form__content p {
   color: #f1f1f1; }
 
+.sub_slider {
+  width: 500px; }
+
 .km__map {
   overflow: hidden;
   margin-bottom: -15px; }

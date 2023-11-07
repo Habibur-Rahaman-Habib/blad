@@ -143,7 +143,6 @@
     $('.testimonials__slider').slick({
         slidesToShow: 1,
         arrows: false,
-        fade: true,
         asNavFor: '.sub_slider'
       });
       $('.sub_slider').slick({
