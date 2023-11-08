@@ -140,21 +140,6 @@
         ]
     });
 
-    $('.testimonials__slider').slick({
-        slidesToShow: 1,
-        arrows: false,
-        asNavFor: '.sub_slider'
-      });
-      $('.sub_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.testimonials__slider',
-        centerMode: true,
-        focusOnSelect: true,
-        prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-angles-left"></i></button>',
-        nextArrow: '<button class="next-arrow"><i class="fa-solid fa-angles-right"></i></button>',
-      });
-
 
     $(".contact__slider").slick({
         slidesToShow: 1,
@@ -176,6 +161,39 @@
         prevArrow: '<button class="prev-arrow"><i class="fas fa-arrow-left"></i></button>',
         nextArrow: '<button class="next-arrow"><i class="fas fa-arrow-right"></i></button>',
     });
+
+
+
+
+
+    $('.km__main__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.bottom__slider'
+      });
+      $('.bottom__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.km__main__slider',
+        prevArrow: '<button class="prev-arrow"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow: '<button class="next-arrow"><i class="fas fa-arrow-right"></i></button>',
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //nice select
     $('.nice_select').niceSelect();
