@@ -146,6 +146,104 @@ header {
       gap: 35px;
     }
     li {
+      position: relative;
+      z-index: 1;
+      &:hover{
+        ul{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      ul{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: -1;
+        background: var(--primary-color);
+        opacity: 0;
+        visibility: hidden;
+        li{
+          a{
+            min-width: 200px;
+            padding: 15px 25px;
+            color: var(--white);
+            transition: var(--transition_base);
+            &:hover{
+              background: var(--secondary-color);
+            }
+          }
+        }
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        color: var(--secondary-color);
+        gap: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 38px 0;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .header_search_menu {
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+    .offcanvas_btn {
+      padding-right: 0px;
+      border: 0;
+    }
+  }
+}
+
+.hm3_header_bottom {
+  @media (max-width: 1199px) {
+    padding: 20px 0;
+  }
+  .main_menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 85px;
+    @media (max-width: 1612px) {
+      justify-content: end;
+      gap: 40px;
+      padding-left: 0px;
+    }
+    @media (max-width: 1475px) {
+      gap: 35px;
+    }
+    li {
+      position: relative;
+      z-index: 1;
+      &:hover{
+        ul{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      ul{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: -1;
+        background: var(--primary-color);
+        opacity: 0;
+        visibility: hidden;
+        li{
+          a{
+            min-width: 200px;
+            padding: 15px 25px;
+            color: var(--white);
+            transition: var(--transition_base);
+            &:hover{
+              background: var(--secondary-color);
+            }
+          }
+        }
+      }
       a {
         display: inline-flex;
         align-items: center;

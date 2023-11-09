@@ -1,15 +1,13 @@
 /*******************pc-list***************************/
-.pc-list{
-    padding: 0;
+.km_pc_list{
     li{
         display: flex;
-        align-items: center;
         gap: 10px;
-        margin-bottom: 20px;
+        + li{
+            margin-top: 20px;
+        }
         span{
-            i{
-                color: var(--primary-color);
-            }
+            color: var(--primary-color);
         }
     }
 }

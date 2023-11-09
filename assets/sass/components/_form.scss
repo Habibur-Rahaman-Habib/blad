@@ -127,7 +127,9 @@
 
 
  /**************************Donate Now*********************/
- .donate__form{
+ .km__donate__form{
+  padding: 30px;
+  border: 1px solid var(--border-color);
   form{
     input{
       width: 100%;
