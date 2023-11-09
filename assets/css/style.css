@@ -905,7 +905,7 @@ header .header_top {
         gap: 35px; } }
     .header_bottom .main_menu li {
       position: relative;
-      z-index: 1; }
+      z-index: 5; }
       .header_bottom .main_menu li:hover ul {
         opacity: 1;
         visibility: visible; }
@@ -951,78 +951,6 @@ header .header_top {
     .header_bottom .header_search_menu .offcanvas_btn {
       padding-right: 0px;
       border: 0; }
-
-@media (max-width: 1199px) {
-  .hm3_header_bottom {
-    padding: 20px 0; } }
-
-.hm3_header_bottom .main_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  padding-left: 85px; }
-  @media (max-width: 1612px) {
-    .hm3_header_bottom .main_menu {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: end;
-      gap: 40px;
-      padding-left: 0px; } }
-  @media (max-width: 1475px) {
-    .hm3_header_bottom .main_menu {
-      gap: 35px; } }
-  .hm3_header_bottom .main_menu li {
-    position: relative;
-    z-index: 1; }
-    .hm3_header_bottom .main_menu li:hover ul {
-      opacity: 1;
-      visibility: visible; }
-    .hm3_header_bottom .main_menu li ul {
-      position: absolute;
-      left: 0;
-      top: 100%;
-      z-index: -1;
-      background: var(--primary-color);
-      opacity: 0;
-      visibility: hidden; }
-      .hm3_header_bottom .main_menu li ul li a {
-        min-width: 200px;
-        padding: 15px 25px;
-        color: var(--white);
-        -webkit-transition: var(--transition_base);
-        -o-transition: var(--transition_base);
-        transition: var(--transition_base); }
-        .hm3_header_bottom .main_menu li ul li a:hover {
-          background: var(--secondary-color); }
-    .hm3_header_bottom .main_menu li a {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      color: var(--secondary-color);
-      gap: 6px;
-      font-weight: 500;
-      font-size: 16px;
-      padding: 38px 0; }
-      .hm3_header_bottom .main_menu li a i {
-        font-size: 14px; }
-
-.hm3_header_bottom .header_search_menu {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 10px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end; }
-  .hm3_header_bottom .header_search_menu .offcanvas_btn {
-    padding-right: 0px;
-    border: 0; }
 
 .red_btn {
   display: -webkit-inline-box;
@@ -1612,6 +1540,39 @@ footer .footer_bottom {
     transition: var(--transition); }
     .page_pagination ul li a i {
       font-size: 20px; }
+
+/****************hm1_content_form*********************/
+.hm1_contact_form input,
+.hm1_contact_form select {
+  border-radius: 0;
+  background-color: var(--gray1);
+  color: var(--secondary-color);
+  border: none;
+  height: 55px;
+  padding-left: 18px;
+  border: 1px solid transparent; }
+  .hm1_contact_form input:focus,
+  .hm1_contact_form select:focus {
+    border: 1px solid var(--primary-color); }
+
+.hm1_contact_form textarea {
+  border-radius: 0;
+  background-color: var(--gray1);
+  color: var(--secondary-color);
+  border: none;
+  height: 180px;
+  padding-left: 18px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid transparent; }
+  .hm1_contact_form textarea:focus {
+    border: 1px solid var(--primary-color); }
+
+.hm1_contact_form button {
+  width: 165px;
+  height: 55px;
+  border-radius: 0 !important;
+  color: var(--white); }
 
 /******************km__contact__form******************/
 .km__contact__form {
@@ -2600,29 +2561,6 @@ footer .footer_bottom {
   -webkit-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
   background: var(--white); }
-
-.hm1_contact_form input,
-.hm1_contact_form select {
-  border-radius: 0;
-  background-color: var(--gray1);
-  color: var(--secondary-color);
-  border: none;
-  height: 55px;
-  padding-left: 18px; }
-
-.hm1_contact_form textarea {
-  border-radius: 0;
-  background-color: var(--gray1);
-  color: var(--secondary-color);
-  border: none;
-  height: 180px;
-  padding-left: 18px; }
-
-.hm1_contact_form button {
-  width: 165px;
-  height: 55px;
-  border-radius: 0 !important;
-  color: var(--white); }
 
 .testi_slider .testi_slider_item .testi_content {
   background: url("../images/ts_bg.png") no-repeat;

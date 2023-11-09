@@ -230,9 +230,6 @@
     margin-top: 0;
   }
 }
-// help the people
-.help_people {
-}
 .help_wrap {
   .help_over {
     position: absolute;
@@ -818,31 +815,7 @@
   background: var(--white);
 }
 
-.hm1_contact_form {
-  input,
-  select {
-    border-radius: 0;
-    background-color: var(--gray1);
-    color: var(--secondary-color);
-    border: none;
-    height: 55px;
-    padding-left: 18px;
-  }
-  textarea {
-    border-radius: 0;
-    background-color: var(--gray1);
-    color: var(--secondary-color);
-    border: none;
-    height: 180px;
-    padding-left: 18px;
-  }
-  button {
-    width: 165px;
-    height: 55px;
-    border-radius: 0 !important;
-    color: var(--white);
-  }
-}
+
 
 // testimonial
 .testi_slider {

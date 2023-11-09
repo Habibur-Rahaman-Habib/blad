@@ -1,3 +1,40 @@
+/****************hm1_content_form*********************/
+.hm1_contact_form {
+  input,
+  select {
+    border-radius: 0;
+    background-color: var(--gray1);
+    color: var(--secondary-color);
+    border: none;
+    height: 55px;
+    padding-left: 18px;
+    border: 1px solid transparent;
+    &:focus{
+      border: 1px solid var(--primary-color);
+    }
+  }
+  textarea {
+    border-radius: 0;
+    background-color: var(--gray1);
+    color: var(--secondary-color);
+    border: none;
+    height: 180px;
+    padding-left: 18px;
+    box-shadow: none!important;
+    border: 1px solid transparent;
+    &:focus{
+      border: 1px solid var(--primary-color);
+    }
+  }
+  button {
+    width: 165px;
+    height: 55px;
+    border-radius: 0 !important;
+    color: var(--white);
+  }
+}
+
+
 /******************km__contact__form******************/
 .km__contact__form{
     padding: 60px;
