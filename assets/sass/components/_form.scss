@@ -48,12 +48,14 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
         margin-bottom: 20px;
-        padding: 13px;
+        padding: 16px;
         color: #8c8c8c;
         font-weight: 400;
         text-transform: capitalize;
+        border: 1px solid transparent;
+        transition: var(--transition_base);
         &:focus{
-          background: #F1F1F1;
+          border: 1px solid var(--primary-color);
         }
       }
       textarea{
@@ -63,13 +65,15 @@
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
         margin-bottom: 20px;
-        padding: 13px;
+        padding: 16px;
         color: #8c8c8c;
         font-weight: 400;
         text-transform: capitalize;
+        outline: none;
+        border: 1px solid transparent;
+        transition: var(--transition_base);
         &:focus{
-          background: #F1F1F1;
-          outline: none;
+          border: 1px solid var(--primary-color);
         }
       }
     }
@@ -93,24 +97,29 @@
           color: #8c8c8c;
           font-weight: 400;
           text-transform: capitalize;
+          border: 1px solid transparent;
+          transition: var(--transition_base);
           &:focus{
             background: #F1F1F1;
+            border: 1px solid var(--primary-color);
           }
         }
         textarea{
           width: 100%;
           box-sizing: border-box;
-          border: none;
           background-color: rgb(255, 255, 255);
           box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
           margin-bottom: 20px;
           padding: 13px;
           color: #8c8c8c;
           font-weight: 400;
+          outline: none;
           text-transform: capitalize;
+          border: 1px solid transparent;
+          transition: var(--transition_base);
           &:focus{
             background: #F1F1F1;
-            outline: none;
+            border: 1px solid var(--primary-color);
           }
         }
       }
@@ -157,13 +166,13 @@
     align-items: center;
     input{
       width: 100%;
-      padding: 20px;
+      padding: 16px;
       border: none;
       background: #f9f9f9;
     }
     .bl-submit-btn{
-      width: 65px;
-      height: 65px;
+      width: 60px;
+      height: 60px;
       background: var(--primary-color);
       border: none;
       i{

@@ -1,22 +1,14 @@
 /******************fc-list************************/
 .fc-list{
     display: flex;
-    max-width: 280px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
     gap: 20px;
     li{
-        width: calc(50% - 12px);
-        i{
-            color: var(--primary-color);
-        }
-        span{
-            color: var(--primary-color);
-        }
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--primary-color);
     }
 }
-
 .tags{
     h6{
         font-size: 20px;
@@ -54,10 +46,13 @@
 .km__blockquote__box{
     border: 1px solid var(--primary-color);
     padding: 22px 30px;
-    @include screen-768{
-        .wrap{
-            flex-wrap: wrap;
-        }
+    .imgbx{
+        width: 170px;
+    }
+    @include portrait-phone{
+       .wrap{
+        flex-wrap: wrap;
+       }
     }
 }
 
@@ -71,7 +66,7 @@
             align-items: center;
             justify-content: center;
             color: var(--white);
-            transition: var(--transition-base);
+            transition: var(--transition_base);
             &:hover{
                 background: var(--secondary-color);
             }
@@ -81,7 +76,7 @@
 
 .next__btn{
     .prev{
-        padding: 10px 30px;
+        padding:  25px;
         background: var(--primary-color);
         span{
             color: var(--white);
@@ -89,7 +84,7 @@
             font-size: 18px;
             line-height: 28px;
             display: inline-block;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             text-transform: capitalize;
         }
         p{
@@ -97,7 +92,7 @@
         }
     }
     .next{
-        padding: 10px 30px;
+        padding: 25px;
         background: var(--secondary-color);
         span{
             color: var(--white);
@@ -105,7 +100,7 @@
             font-size: 18px;
             line-height: 28px;
             display: inline-block;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             text-transform: capitalize;
         }
         p{
@@ -117,12 +112,14 @@
     }
 }
 
-.km__reaplay__chats{
+.km__Reply__chats{
     li{
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 3px 81px 0px rgba(0, 0, 0, 0.09);
-        padding: 10px 120px 10px 30px;
-        margin-bottom: 30px;
+        padding: 20px 135px 20px 25px;
+        + li{
+            margin-top: 30px;
+        }
         @include screen-768{
             flex-wrap: wrap;
             padding: 20px;
@@ -131,12 +128,14 @@
 }
 
 .comments__text{
-    strong{
+    b{
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 600;
+        color: var(--secondary-color);
     }
     span{
         color: var(--primary-color);
+        line-height: 40px;
     }
 }
 
@@ -147,6 +146,7 @@
     text-transform: capitalize;
     font-weight: 600;
     transition: var(--transition-base);
+    text-transform: uppercase;
     &:hover{
         color: var(--secondary-color);
     }
@@ -175,7 +175,7 @@
                     align-items: center;
                     color: var(--white);
                     border-radius: 50%;
-                    transition: var(--transition-base);
+                    transition: var(--transition_base);
                     &:hover{
                         background: var(--primary-color);
                     }
@@ -191,12 +191,12 @@
     .bl-ct-list{
         li{
             a{
-                padding: 10px 0;
+                padding: 11px 0;
                 display: block;
                 border-bottom: 1px solid var(--border-color);
                 font-weight: 500;
                 color: var(--secondary-color);
-                transition: var(--transition-base);
+                transition: var(--transition_base);
                 &:hover{
                     color: var(--primary-color);
                 }
@@ -223,7 +223,7 @@
                 border-bottom: 1px solid var(--border-color);
                 font-weight: 500;
                 color: var(--secondary-color);
-                transition: var(--transition-base);
+                transition: var(--transition_base);
                 &:hover{
                     color: var(--primary-color);
                 }
@@ -250,7 +250,7 @@
                 border-bottom: 1px solid var(--border-color);
                 font-weight: 500;
                 color: var(--secondary-color);
-                transition: var(--transition-base);
+                transition: var(--transition_base);
                 &:hover{
                     color: var(--primary-color);
                 }
@@ -280,7 +280,7 @@
                 justify-content: center;
                 border-radius: 50%;
                 color: var(--white);
-                transition: var(--transition-base);
+                transition: var(--transition_base);
                 &:hover{
                     background: var(--primary-color);
                 }
@@ -301,7 +301,7 @@
 .km__blog__two{
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 9px 52px 0px rgba(0, 0, 0, 0.07);
-  padding: 60px 30px;
+  padding: 45px 30px;
 
   .dt-tags{
     display: flex;
@@ -321,11 +321,14 @@
     }
   }
 }
-
 .blog__content{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 9px 52px 0px rgba(0, 0, 0, 0.07);
-    padding: 18px 30px;
+    padding: 15px 30px;
+
+    &.video{
+        padding: 19px 30px;
+    }
 
   .dt-tags{
     display: flex;
@@ -357,6 +360,7 @@
     font-family: var(--font);
     font-size: 40px; 
     opacity: 0.1;
+    color: var(--primary-color);
 }
 
 .km_blog__slider{
@@ -372,7 +376,7 @@
         width: 40px;
         background: var(--white);
         border-radius: 50%;
-        transition: var(--transition-base);
+        transition: var(--transition_base);
         &:hover{
             background: var(--primary-color);
             color: var(--white);
@@ -438,6 +442,14 @@
             z-index: 12;
         }
     }
+}
+
+.ls__imgbx{
+    width: 180px;
+}
+
+.ls_r_imgbx{
+    width: 150px;
 }
 
 @keyframes bollom{

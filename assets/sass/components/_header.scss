@@ -129,6 +129,9 @@ header {
     height: 100%;
     width: 33%;
     z-index: -1;
+    @include screen-992{
+      width: 50%;
+    }
   }
   .main_menu {
     display: flex;

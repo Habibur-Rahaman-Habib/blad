@@ -89,6 +89,11 @@
             },
         ]
     });
+    $(".testimonials__slider").slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots: false,
+    });
 
     $(".hm1_hero_slider").slick({
         slidesToShow: 1,
