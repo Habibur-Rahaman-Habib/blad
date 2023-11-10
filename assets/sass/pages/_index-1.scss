@@ -373,6 +373,7 @@
   background: url("../images/call.jpg") no-repeat;
   padding: 90px 0;
   background-size: cover;
+  z-index: 1;
   .call_content {
     border: 8px solid var(--primary-color);
     position: relative;
@@ -851,4 +852,7 @@
       }
     }
   }
+}
+.slick-dots{
+  cursor: pointer;
 }

@@ -11,6 +11,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
     h1 {
         font-family: var(--heading-font);
     }

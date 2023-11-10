@@ -1018,6 +1018,11 @@ header .header_top {
     gap: 60px; }
     .bi_megamenu .megamenu_row .megamenu-column {
       width: 20%; }
+      .bi_megamenu .megamenu_row .megamenu-column .megamenu-banner img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
       .bi_megamenu .megamenu_row .megamenu-column.border-r {
         position: relative; }
         .bi_megamenu .megamenu_row .megamenu-column.border-r::after {
@@ -1078,7 +1083,9 @@ header .header_top {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0; }
   .preloader h1 {
     font-family: var(--heading-font); }
   .preloader .preload-progress {
@@ -2276,7 +2283,8 @@ footer .footer_bottom {
 .call_now {
   background: url("../images/call.jpg") no-repeat;
   padding: 90px 0;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 1; }
   .call_now .call_content {
     border: 8px solid var(--primary-color);
     position: relative;
@@ -2729,6 +2737,9 @@ footer .footer_bottom {
     margin-bottom: 10px; }
   .testi_slider .testi_slider_item .testi_owner p {
     font-size: 19px; }
+
+.slick-dots {
+  cursor: pointer; }
 
 .hm2_hero {
   background: url("../images/hm2.jpg") no-repeat;
