@@ -96,6 +96,8 @@
     });
 
     $(".hm1_hero_slider").slick({
+        autoplay: true,
+        autoplaySpeed: 300,
         slidesToShow: 1,
         prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
         nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
@@ -146,6 +148,103 @@
     });
 
 
+    $(document).ready(function(){
+        //8. preloader
+        $(".preloader").fadeOut();
+
+        //9. init Isotope
+        var $grid_1 = $('.grid_1').isotope({
+            masonry: {
+                columnWidth: 1
+            }
+        });
+
+        //10. filter items on button click
+        $('.vr-filter-btns').on( 'click', 'button', function() {
+            var filterValue_1 = $(this).attr('data-filter');
+            $grid_1.isotope({ filter: filterValue_1 });
+        });
+
+        $(".vr-filter-btns button").each(function(){
+            $(this).on("click", function(){
+                $(this).parents(".vr-filter-btns").find("button.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+
+        //11. Isotop Grid 2
+        var $grid = $('.hm2-grid').isotope({
+            
+        });
+
+        // filter items on button click
+        $('.hm2-filter-btn-group').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+
+        $(".hm2-filter-btn-group button").each(function(){
+            $(this).on("click", function(){
+                $(this).parents(".hm2-filter-btn-group").find("button.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        var $grid3 = $('.grid_3').isotope({
+            masonry: {
+                columnWidth: 1
+            }
+        });
+
+        // filter items on button click
+        $('.vr6-filter-btns').on( 'click', 'button', function() {
+            var filterValue3 = $(this).attr('data-filter');
+            $grid3.isotope({ filter: filterValue3 });
+        });
+
+        $(".vr6-filter-btns button").each(function(){
+            $(this).on("click", function(){
+                $(this).parents(".vr6-filter-btns").find("button.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        var $grid4 = $('.vr4_grid').isotope({
+            masonry: {
+                columnWidth: 1
+            }
+        });
+
+        // filter items on button click
+        $('.vr4-filter-nav').on( 'click', 'button', function() {
+            var filterValue4 = $(this).attr('data-filter');
+            $grid4.isotope({ filter: filterValue4 });
+        });
+
+        $(".vr4-filter-nav button").each(function(){
+            $(this).on("click", function(){
+                $(this).parents(".vr6-filter-btns").find("button.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+
+        //12. video popup 
+        Fancybox.bind("[data-fancybox]", {
+            
+        });
+
+        //13. zoom on hover 
+        $('.zoom-on-hover').zoom({
+            magnify: 1.2
+
+        });
+
+
+    });
+
+
     $(".contact__slider").slick({
         slidesToShow: 1,
         arrows: false,
@@ -180,6 +279,7 @@
       $('.bottom__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: true,
         asNavFor: '.km__main__slider',
         prevArrow: '<button class="prev-arrow"><i class="fas fa-arrow-left"></i></button>',
         nextArrow: '<button class="next-arrow"><i class="fas fa-arrow-right"></i></button>',

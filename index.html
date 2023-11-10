@@ -24,7 +24,14 @@
 
 
 <body>
-
+   <!--preloader start-->
+   <div class="preloader">
+    <h1 class="display-1">Blood Ai</h1>
+    <div class="preload-progress">
+        <span></span>
+    </div>
+</div>
+<!--preloader end-->
   <!-- header start -->
   <header>
     <div class="header_top d-none d-lg-block d-xl-block d-xxl-block">
@@ -72,30 +79,87 @@
           </div>
           <div class="col-xl-8 col-lg-8 d-none d-xxl-block d-xl-block">
             <ul class="main_menu">
-              <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-                <ul>
-                  <li><a href="index.html">Home 1</a></li>
-                  <li><a href="index-2.html">Home 2</a></li>
-                  <li><a href="index-3.html">Home 3</a></li>
+              <li class="has_submenu">
+                <a href="javascript:void(0)">Home</a>
+                <ul class="submenu_wrapper">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index-2.html">Home 2</a></li>
+                    <li><a href="index-3.html">Home 3</a></li>
                 </ul>
               </li>
-              <li><a href="about.html">About Us </a></li>
-              <li><a href="#">Campaign <i class="fa-solid fa-angle-down"></i></a>
-                <ul>
-                  <li><a href="campaign.html">Campaign</a></li>
-                  <li><a href="campaign-details.html">Campaign Details</a></li>
+              <li><a href="about.html">about Us</a></li>
+              <li class="has_submenu">
+                <a href="javascript:void(0)">Campaign </a>
+                <ul class="submenu_wrapper">
+                    <li><a href="campaign.html">Campaign </a></li>
+                    <li><a href="campaign-details.html">Campaign Details</a></li>
                 </ul>
               </li>
-              <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-                  <ul>
+              <li class="has_submenu">
+                <a href="javascript:void(0)">Pages</a>
+                <div class="bi_megamenu">
+                  <div class="megamenu_row">
+                    <div class="megamenu-column border-r">
+                      <h6 class="column-title">Home</h6>
+                      <ul class="pages_list">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index-2.html">Home 2</a></li>
+                        <li><a href="index-3.html">Home 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column border-r">
+                      <h6 class="column-title">Pages</h6>
+                      <ul class="pages_list">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="index-3.html">Service Details</a></li>
+                        <li><a href="team-member.html">Team Member</a></li>
+                        <li><a href="terms.html">Terms & Condation</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column border-r">
+                      <h6 class="column-title">Pages</h6>
+                      <ul class="pages_list">
+                        <li><a href="photo-gallary.html">photo-gallary</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="campaign.html">Campaign</a></li>
+                        <li><a href="campaign-details.html">Campaign Details</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="register.html">Contract</a></li>
+                        <li><a href="404.html">404</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column">
+                      <h6 class="column-title">Blog</h6>
+                      <ul class="pages_list">
+                        <li><a href="blog-default.html">Blog Default</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                        <li><a href="blog-style1.html">Blog 1</a></li>
+                        <li><a href="blog-style2.html">Blog 2</a></li>
+                        <li><a href="blog-details-left-sidebar.html">Blog left</a></li>
+                        <li><a href="blog-details-right-sidebar.html">Blog Right</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column banner">
+                      <div class="megamenu-banner">
+                          <a href="blog-details.html"><img src="assets/images/blog/bl-2.jpg" alt="not found"></a>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </li>
+              <li class="has_submenu">
+                <a href="javascript:void(0)">Blog</a>
+                <ul class="submenu_wrapper">
                     <li><a href="blog-default.html">Blog</a></li>
                     <li><a href="blog-details.html">Blog Details</a></li>
                     <li><a href="blog-details-left-sidebar.html">Blog Left</a></li>
-                    <li><a href="blog-details-right-sidebar.html">Blog Right</a></li>
-                    <li><a href="blog-style1.html">Blog 1</a></li>
-                    <li><a href="blog-style2.html">Blog 2</a></li>
-                  </ul>
+                    <li><a href="blog-details-right-sidebar.html">Blog right</a></li>
+                    <li><a href="blog-style1.html">style 1</a></li>
+                    <li><a href="blog-style2.html">style 2</a></li>
+                </ul>
               </li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -109,9 +173,12 @@
                 <option value="2">Spanish</option>
               </select>
               <div class="offcanvas_right">
-                <button class="btn offcanvas_btn" type="button" data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span><i
-                      class="fa-solid fa-bars"></i></span></button>
+                <button class="header_toggle_btn bg-transparent offcanvas_btn" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                   aria-labelledby="offcanvasRightLabel">
@@ -131,9 +198,11 @@
             <div class="d-flex align-items-center gap-2 justify-content-end">
               <span><i class="fa-solid fa-magnifying-glass"></i></span>
               <div class="mobile_menu">
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                <button class="header_toggle_btn bg-transparent border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                   aria-controls="offcanvasExample">
-                  mobile
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </button>
               </div>
             </div>
@@ -195,7 +264,6 @@
     <div class="container">
       <div class="row g-0 register_top">
         <div class="col-xl-6 col-lg-6 col-12">
-          <a href="#">
             <div class="register red_bg">
               <div class="register_content">
                 <h4>Register Now</h4>
@@ -204,13 +272,11 @@
                 </p>
               </div>
               <div class="register_icon">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="register.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
               </div>
-            </div>
-          </a>
+          </div>
         </div>
         <div class="col-xl-6 col-lg-6  col-12">
-          <a href="#">
             <div class="register black_bg">
               <div class="register_content">
                 <h4>Donate Now</h4>
@@ -219,10 +285,9 @@
                 </p>
               </div>
               <div class="register_icon">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="donate.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
               </div>
             </div>
-          </a>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -1062,6 +1127,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/wow.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/fancybox.js"></script>
   <script src="assets/js/counterup.min.js"></script>
