@@ -1,3 +1,9 @@
+// header
+.header_bottom2 {
+  &::before {
+    display: none;
+  }
+}
 // hero
 .hm2_hero {
   background: url("../images/hm2.jpg") no-repeat;
@@ -236,7 +242,6 @@
   }
 }
 
-
 // blood doner
 .blood2 {
   .blood_play img {
@@ -268,8 +273,83 @@
 }
 
 // footer
-// .footer_top2 {
-//   // background: url("../../images/h2_f_bg.jpg") no-repeat !important;
-//   // background-size: cover !important;
-//   // background-position: center;
-// }
+
+.footer_top2 {
+  background: url("../images/h2_f_bg.jpg") no-repeat !important;
+  background-size: cover !important;
+  background-position: center;
+  .footer_content {
+    h5 {
+      color: var(--secondary-color) !important;
+    }
+    p {
+      color: var(--p-color) !important;
+    }
+    ul {
+      li {
+        color: var(--p-color) !important;
+        &:hover {
+          a {
+            color: var(--primary-color) !important;
+          }
+        }
+        span {
+          color: var(--secondary-color);
+        }
+        a {
+          color: var(--p-color) !important;
+          transition: var(--transition_base);
+        }
+      }
+    }
+    .footer_blog {
+      .fblog_item {
+        .fblog_content {
+          a {
+            color: var(--p-color) !important;
+            &:hover {
+              color: var(--primary-color) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer_middle {
+    .footer_subscrive {
+      h6 {
+        color: var(--secondary-color) !important;
+      }
+      form {
+        input {
+          background: white !important;
+          &::placeholder {
+            color: var(--border-color);
+          }
+        }
+        button {
+        }
+      }
+    }
+    .footer_social {
+      .social_icon {
+        margin-bottom: 25px;
+        li {
+          &:hover {
+            a {
+              background: var(--secondary-color) !important;
+              color: white !important;
+            }
+          }
+        }
+      }
+      .page_link {
+        li {
+          a {
+            color: var(--secondary-color) !important;
+          }
+        }
+      }
+    }
+  }
+}

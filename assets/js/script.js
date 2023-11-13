@@ -19,6 +19,7 @@
         16. Count Down
         17. Accordion Boxs
     */
+
     //fancy box video popup 
     Fancybox.bind("[data-fancybox]", {
     });
@@ -31,20 +32,6 @@
         });
     });
 
-    // this is for back to top
-    var btn = $('#button');
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-    });
-
-    btn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, '300');
-    });
 
 
     $(".campaign_slider").slick({
@@ -148,9 +135,6 @@
     });
 
 
-    
-
-
     $(".contact__slider").slick({
         slidesToShow: 1,
         arrows: false,
@@ -174,22 +158,20 @@
 
 
 
-
-
     $('.km__main__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         asNavFor: '.bottom__slider'
-      });
-      $('.bottom__slider').slick({
+    });
+    $('.bottom__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
         asNavFor: '.km__main__slider',
         prevArrow: '<button class="prev-arrow"><i class="fas fa-arrow-left"></i></button>',
         nextArrow: '<button class="next-arrow"><i class="fas fa-arrow-right"></i></button>',
-      });
+    });
 
 
 
@@ -197,10 +179,45 @@
     $('.nice_select').niceSelect();
 
 
+    // Preloader
+    setTimeout(() => {
+        $('.preloader').fadeOut()
+    }, 1000);
 
 
 
-
+    // Scroll back to top
+    var progressPath = document.querySelector('.progress-wrap path');
+    var pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    var updateProgress = function () {
+        var scroll = $(window).scrollTop();
+        var height = $(document).height() - $(window).height();
+        var progress = pathLength - (scroll * pathLength / height);
+        progressPath.style.strokeDashoffset = progress;
+    }
+    updateProgress();
+    $(window).scroll(updateProgress);
+    var offset = 150;
+    var duration = 550;
+    jQuery(window).on('scroll', function () {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.progress-wrap').addClass('active-progress');
+        } else {
+            jQuery('.progress-wrap').removeClass('active-progress');
+        }
+    });
+    jQuery('.progress-wrap').on('click', function (event) {
+        event.preventDefault();
+        jQuery('html, body').animate({
+            scrollTop: 0
+        }, duration);
+        return false;
+    });
 
 
 
