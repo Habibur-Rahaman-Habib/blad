@@ -27,6 +27,7 @@
       font-weight: 500;
       text-transform: capitalize;
       position: relative;
+      transition: var(--transition_base);
       z-index: 1;
       &:hover {
         color: var(--white);

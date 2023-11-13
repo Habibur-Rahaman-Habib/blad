@@ -96,24 +96,24 @@
     z-index: -1;
     transition: var(--transition_base);
   }
-    position: relative;
-    z-index: 1;
-    &:hover{
-        &::after{
-            width: 100%;
-        }
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::after {
+      width: 100%;
     }
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: black;
-        z-index: -1;
-        transition: var(--transition_base);
-    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: var(--transition_base);
+  }
 }
 
 /*******************contact__btn*******************/
@@ -192,8 +192,7 @@
   color: #111111;
 }
 
-
-.customs__btn{
+.customs__btn {
   width: 180px;
   height: 60px;
   display: flex;
@@ -225,18 +224,20 @@
   }
 }
 
-.readmore__btn{
+.readmore__btn {
   color: var(--secondary-color);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
-  &:hover{
+  font-weight: 600;
+  font-size: 18px;
+  &:hover {
     color: var(--primary-color);
   }
 }
 
-
-
 /*********************km__register__btn*******************/
-.km__register__btn{
+.km__register__btn {
   width: 100%;
   display: flex;
   align-items: center;
@@ -268,13 +269,8 @@
   }
 }
 
-
-
-
-
-
 /************************sd__service_btn*******************************/
-.sd__service_btn{
+.sd__service_btn {
   width: 100%;
   display: flex;
   align-items: center;

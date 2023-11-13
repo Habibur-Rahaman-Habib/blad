@@ -23,6 +23,25 @@
 
 <body>
 
+  <!--preloader start-->
+  <div class="preloader">
+    <h1>Blood Ai</h1>
+    <div class="preload-progress">
+      <span></span>
+    </div>
+  </div>
+  <!--preloader end-->
+
+  <!-- scroll to top -->
+  <div class="progress-wrap cursor-pointer active-progress">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 221.377;">
+      </path>
+    </svg>
+  </div>
+  <!-- scroll to top -->
+
   <!-- header start -->
   <header>
     <div class="header_top d-none d-lg-block d-xl-block d-xxl-block">
@@ -62,7 +81,7 @@
     </div>
     <div class="header_bottom">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center position-relative">
           <div class="col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="header_logo">
               <a href="index.html"><img src="assets/images/logo.png" alt="images not founds" class="img-fluid"></a>
@@ -70,29 +89,98 @@
           </div>
           <div class="col-xl-8 col-lg-8 d-none d-xxl-block d-xl-block">
             <ul class="main_menu">
-              <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-                <ul>
+              <li class="position-relative">
+                <a href="javascript:void(0)">Home <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu_wrapper">
                   <li><a href="index.html">Home 1</a></li>
                   <li><a href="index-2.html">Home 2</a></li>
                   <li><a href="index-3.html">Home 3</a></li>
                 </ul>
               </li>
-              <li><a href="about.html">About Us </a></li>
-              <li><a href="#">Campaign <i class="fa-solid fa-angle-down"></i></a>
-                <ul>
-                  <li><a href="campaign.html">Campaign</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="position-relative">
+                <a href="javascript:void(0)">Campaign <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu_wrapper">
+                  <li><a href="campaign.html">Campaign </a></li>
                   <li><a href="campaign-details.html">Campaign Details</a></li>
                 </ul>
               </li>
-              <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-              <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-                <ul>
+              <li>
+                <a href="javascript:void(0)">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <div class="bi_megamenu">
+                  <div class="megamenu_row">
+                    <div class="megamenu-column border-end">
+                      <h6 class="column-title">Home</h6>
+                      <ul class="pages_list">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index-2.html">Home 2</a></li>
+                        <li><a href="index-3.html">Home 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column border-end">
+                      <h6 class="column-title">Pages</h6>
+                      <ul class="pages_list">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="index-3.html">Service Details</a></li>
+                        <li><a href="team-member.html">Team Member</a></li>
+                        <li><a href="terms.html">Terms & Condation</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column border-end">
+                      <h6 class="column-title">Pages</h6>
+                      <ul class="pages_list">
+                        <li><a href="photo-gallary.html">photo-gallary</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="campaign.html">Campaign</a></li>
+                        <li><a href="campaign-details.html">Campaign Details</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="register.html">Contract</a></li>
+                        <li><a href="404.html">404</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column border-end">
+                      <h6 class="column-title">Blog</h6>
+                      <ul class="pages_list">
+                        <li><a href="blog-default.html">Blog Default</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                        <li><a href="blog-style1.html">Blog 1</a></li>
+                        <li><a href="blog-style2.html">Blog 2</a></li>
+                        <li><a href="blog-details-left-sidebar.html">Blog left</a></li>
+                        <li><a href="blog-details-right-sidebar.html">Blog Right</a></li>
+                      </ul>
+                    </div>
+                    <div class="megamenu-column banner">
+                      <div class="megamenu-banner img">
+                        <div class="row ">
+                          <div class="col-12">
+                            <div class="fblog_img img">
+                              <a href="blog-details.html"><img src="assets/images/f1.jpg" class="w-100" alt=""></a>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="fblog_content">
+                              <a href="blog-details.html"> A Formula For Help And Happiness</a>
+                              <span>18 February, 2022</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="position-relative">
+                <a href="javascript:void(0)">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu_wrapper">
                   <li><a href="blog-default.html">Blog</a></li>
                   <li><a href="blog-details.html">Blog Details</a></li>
                   <li><a href="blog-details-left-sidebar.html">Blog Left</a></li>
-                  <li><a href="blog-details-right-sidebar.html">Blog Right</a></li>
-                  <li><a href="blog-style1.html">Blog 1</a></li>
-                  <li><a href="blog-style2.html">Blog 2</a></li>
+                  <li><a href="blog-details-right-sidebar.html">Blog right</a></li>
+                  <li><a href="blog-style1.html">style 1</a></li>
+                  <li><a href="blog-style2.html">style 2</a></li>
                 </ul>
               </li>
               <li><a href="contact.html">Contact</a></li>
@@ -100,38 +188,54 @@
           </div>
           <div class="col-xl-2 col-lg-2  d-none d-xxl-block d-xl-block">
             <div class="header_search_menu d-flex">
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <div class="dropdown dropdown_search">
+                <button class="search-btn " data-bs-toggle="dropdown" aria-expanded="true"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" data-popper-placement="bottom-end">
+                  <form class="search-form d-flex align-items-center gap-2">
+                    <input type="text" placeholder="Search..." class="theme-input bg-transparent">
+                    <button type="submit" class="submit-btn">Go</button>
+                  </form>
+                </div>
+              </div>
+
               <select>
                 <option selected>English</option>
                 <option value="1">Franch</option>
                 <option value="2">Spanish</option>
               </select>
-              <div class="offcanvas_right">
-                <button class="btn offcanvas_btn" type="button" data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span><i
-                      class="fa-solid fa-bars"></i></span></button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                  aria-labelledby="offcanvasRightLabel">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                      aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    ...
-                  </div>
-                </div>
+              <!-- right offcanvas -->
+              <div class="offcanvas_right">
+                <button class="header_toggle_btn bg-transparent offcanvas_btn" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- mobile menu bar -->
           <div class="col-lg-10 col-md-8 col-6 d-block d-xxl-none d-xl-none">
             <div class="d-flex align-items-center gap-2 justify-content-end">
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <div class="dropdown dropdown_search">
+                <button class="search-btn " data-bs-toggle="dropdown" aria-expanded="true"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="dropdown-menu dropdown-menu-end" data-popper-placement="bottom-end">
+                  <form class="search-form d-flex align-items-center gap-2">
+                    <input type="text" placeholder="Search..." class="theme-input bg-transparent">
+                    <button type="submit" class="submit-btn">Go</button>
+                  </form>
+                </div>
+              </div>
               <div class="mobile_menu">
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample">
-                  mobile
+                <button class="header_toggle_btn bg-transparent border-0" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvas-mobile" aria-controls="offcanvasExample">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </button>
               </div>
             </div>
@@ -144,7 +248,7 @@
   <!-- header end -->
 
   <!-- breadcrumb start -->
-  <div class="breadcrumb_section overflow-hidden ptb-115">
+  <div class="breadcrumb_section overflow-hidden ptb-150">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 text-center">
@@ -162,17 +266,20 @@
   <!-- campaigns section start -->
   <section class="km__campaigns ptb-115">
     <div class="container">
-      <div class="website__title text-center">
-        <h2 class="mb-60">
-          <span>DONATE NOW</span>
-          Popular Campaigns
-        </h2>
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="common_title text-center">
+            <p>Donate Now</p>
+            <h2>Popular Campaigns</h2>
+          </div>
+        </div>
       </div>
+
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
           <div class="km__blog position-relative">
             <div class="feature-image img mb-30">
-              <a href="#">
+              <a href="campaign-details.html">
                 <img class="w-100" src="assets/images/cm1.jpg" alt="images not found" />
               </a>
               <span class="data-tags d-flex justify-content-center align-items-center">
@@ -181,8 +288,8 @@
               </span>
             </div>
             <div class="km__post__content">
-              <a href="#">
-                <h4 class="mb-30">Blood Group Collection</h4>
+              <a href="campaign-details.html">
+                <h4 class="mb-3">Blood Group Collection</h4>
               </a>
               <p class="mb-30">
                 Lorem ipsum dolor sit consectetur adipiscing elit, sed do
@@ -194,7 +301,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
           <div class="km__blog position-relative">
             <div class="feature-image img mb-30">
-              <a href="#">
+              <a href="campaign-details.html">
                 <img class="w-100" src="assets/images/cm2.jpg" alt="images not found" />
               </a>
               <span class="data-tags d-flex justify-content-center align-items-center">
@@ -203,8 +310,8 @@
               </span>
             </div>
             <div class="km__post__content">
-              <a href="#">
-                <h4 class="mb-30">Free Group Checking</h4>
+              <a href="campaign-details.html">
+                <h4 class="mb-3">Free Group Checking</h4>
               </a>
               <p class="mb-30">
                 Lorem ipsum dolor sit consectetur adipiscing elit, sed do
@@ -216,7 +323,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
           <div class="km__blog position-relative">
             <div class="feature-image img mb-30">
-              <a href="#">
+              <a href="campaign-details.html">
                 <img class="w-100" src="assets/images/cm3.jpg" alt="images not found" />
               </a>
               <span class="data-tags d-flex justify-content-center align-items-center">
@@ -225,8 +332,8 @@
               </span>
             </div>
             <div class="km__post__content">
-              <a href="#">
-                <h4 class="mb-30">Blood Donation Camp</h4>
+              <a href="campaign-details.html">
+                <h4 class="mb-3">Blood Donation Camp</h4>
               </a>
               <p class="mb-30">
                 Lorem ipsum dolor sit consectetur adipiscing elit, sed do
@@ -238,7 +345,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
           <div class="km__blog position-relative">
             <div class="feature-image img mb-30">
-              <a href="#">
+              <a href="campaign-details.html">
                 <img class="w-100" src="assets/images/cm4.jpg" alt="images not found" />
               </a>
               <span class="data-tags d-flex justify-content-center align-items-center">
@@ -247,8 +354,8 @@
               </span>
             </div>
             <div class="km__post__content">
-              <a href="#">
-                <h4 class="mb-30">Free Group Checking</h4>
+              <a href="campaign-details.html">
+                <h4 class="mb-3">Free Group Checking</h4>
               </a>
               <p class="mb-30">
                 Lorem ipsum dolor sit consectetur adipiscing elit, sed do
@@ -260,7 +367,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4 mb-xl-0 mb-lg-0 mb-md-0">
           <div class="km__blog position-relative">
             <div class="feature-image img mb-30">
-              <a href="#">
+              <a href="campaign-details.html">
                 <img class="w-100" src="assets/images/cm1.jpg" alt="images not found" />
               </a>
               <span class="data-tags d-flex justify-content-center align-items-center">
@@ -269,8 +376,8 @@
               </span>
             </div>
             <div class="km__post__content">
-              <a href="#">
-                <h4 class="mb-30">Blood Donation Camp</h4>
+              <a href="campaign-details.html">
+                <h4 class="mb-3">Blood Donation Camp</h4>
               </a>
               <p class="mb-30">
                 Lorem ipsum dolor sit consectetur adipiscing elit, sed do
@@ -282,7 +389,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-12">
           <div class="km__blog position-relative">
             <div class="feature-image img mb-30">
-              <a href="#">
+              <a href="campaign-details.html">
                 <img class="w-100" src="assets/images/cm2.jpg" alt="images not found" />
               </a>
               <span class="data-tags d-flex justify-content-center align-items-center">
@@ -291,8 +398,8 @@
               </span>
             </div>
             <div class="km__post__content">
-              <a href="#">
-                <h4 class="mb-30">Blood Group Collection</h4>
+              <a href="campaign-details.html">
+                <h4 class="mb-3">Blood Group Collection</h4>
               </a>
               <p class="mb-30">
                 Lorem ipsum dolor sit consectetur adipiscing elit, sed do
@@ -326,38 +433,36 @@
   <!-- Testimonials section start -->
   <section class="km__testimonials__section ptb-115">
     <div class="container">
-      <div class="website__title text-center">
-        <h2 class="mb-60">
-          <span>Testimonials</span>
-          What Our Clients Say
-        </h2>
+      <div class="row mb-5 ">
+        <div class="col-12">
+          <div class="common_title text-center">
+            <p>Testimonials</p>
+            <h2>What Our Clients Say</h2>
+          </div>
+        </div>
       </div>
+
       <div class="testimonials__slider">
         <div class="slide__items">
           <div class="km_testimonials__bx text-center">
             <div class="row justify-content-center">
               <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-10">
                 <div class="km__testimonial__content">
-                  <span> " </span>
-                  <h4 class="text-white mb-30">
-                    Professional services all the way
-                  </h4>
-                  <p class="text-white mb-30">
-                    These cases are perfectly simple and easy to distinguish.
-                    In a free hour, when our power of choice is untrammelled
-                    and when nothing prevents our being able to do what we
-                    like best, every pleasure is to be welcomed and every pain
-                    avoided.
-                  </p>
+                  <span>
+                    "
+                  </span>
+                  <h4 class="text-white mb-30">Professional services all the way</h4>
+                  <p class="text-white mb-30"> These cases are perfectly simple and easy to distinguish. In a free hour,
+                    when our power of choice is untrammelled and when nothing prevents our being able to do what we like
+                    best, every pleasure is to be welcomed and every pain avoided. </p>
                 </div>
                 <div class="user mt-30">
-                  <img src="assets/images/about/user.png" alt="images not found" />
-                  <h6 class="mt-30 text-white">
-                    Jhon Alexis <span>Marketing Staff</span>
-                  </h6>
+                  <img src="assets/images/about/user.png" alt="images not found">
+                  <h6 class="mt-30 text-white">Jhon Alexis <span>Marketing Staff</span></h6>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         <div class="slide__items">
@@ -365,26 +470,21 @@
             <div class="row justify-content-center">
               <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-10">
                 <div class="km__testimonial__content">
-                  <span> " </span>
-                  <h4 class="text-white mb-30">
-                    Professional services all the way
-                  </h4>
-                  <p class="text-white mb-30">
-                    These cases are perfectly simple and easy to distinguish.
-                    In a free hour, when our power of choice is untrammelled
-                    and when nothing prevents our being able to do what we
-                    like best, every pleasure is to be welcomed and every pain
-                    avoided.
-                  </p>
+                  <span>
+                    "
+                  </span>
+                  <h4 class="text-white mb-30">Professional services all the way</h4>
+                  <p class="text-white mb-30"> These cases are perfectly simple and easy to distinguish. In a free hour,
+                    when our power of choice is untrammelled and when nothing prevents our being able to do what we like
+                    best, every pleasure is to be welcomed and every pain avoided. </p>
                 </div>
                 <div class="user mt-30">
-                  <img src="assets/images/about/user.png" alt="images not found" />
-                  <h6 class="mt-30 text-white">
-                    Jhon Alexis <span>Marketing Staff</span>
-                  </h6>
+                  <img src="assets/images/about/user.png" alt="images not found">
+                  <h6 class="mt-30 text-white">Jhon Alexis <span>Marketing Staff</span></h6>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -396,10 +496,10 @@
   <section class="request3 gray_bg ptb-115">
     <div class="container">
       <div class="row justify-content-center mb-5">
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12">
+        <div class="col-xl-7 col-lg-9 col-md-10 col-12">
           <div class="common_title text-center">
             <p>registration</p>
-            <h2>Your Donation Can Someone Life Better</h2>
+            <h2>Your Donation Can Make Someone Life Better</h2>
           </div>
         </div>
       </div>
@@ -552,15 +652,13 @@
   <!-- footer section start -->
   <footer>
     <div class="footer_top">
-      <div class="container">
+      <div class="container ">
         <div class="row border-bottom justify-content-center">
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
             <div class="footer_content">
               <h5>About Us</h5>
-              <p>
-                Duis aute irure dolor in reprehenderit velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              </p>
+              <p>Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat</p>
               <ul>
                 <li><span>Phone:</span> +1(456)657-887, 999</li>
                 <li><span>Email:</span> contactblood@gmail.com</li>
@@ -571,21 +669,11 @@
             <div class="footer_content">
               <h5>Quick Links</h5>
               <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Services</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> About Us</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> New Campaign</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Latest News</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Contact</a>
-                </li>
+                <li><a href="service.html"><i class="fa-solid fa-angles-right"></i> Services</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                <li><a href="campaign.html"><i class="fa-solid fa-angles-right"></i> New Campaign</a></li>
+                <li><a href="blog-details.html"><i class="fa-solid fa-angles-right"></i> Latest News</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
               </ul>
             </div>
           </div>
@@ -593,23 +681,11 @@
             <div class="footer_content">
               <h5>Our Services</h5>
               <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Blood
-                    Donation</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Health Check</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Blood Bank</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Donate
-                    Process</a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-right"></i> Blood Info</a>
-                </li>
+                <li><a href="donate.html"><i class="fa-solid fa-angles-right"></i> Blood Donation</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i> Health Check</a></li>
+                <li><a href="donate.html"><i class="fa-solid fa-angles-right"></i> Blood Bank</a></li>
+                <li><a href="donate.html"><i class="fa-solid fa-angles-right"></i> Donate Process</a></li>
+                <li><a href="donate.html"><i class="fa-solid fa-angles-right"></i> Blood Info</a></li>
               </ul>
             </div>
           </div>
@@ -621,12 +697,12 @@
                   <div class="row align-items-center">
                     <div class="col-4">
                       <div class="fblog_img img">
-                        <a href="#"><img src="assets/images/f1.jpg" alt="" /></a>
+                        <a href="blog-details.html"><img src="assets/images/f1.jpg" alt=""></a>
                       </div>
                     </div>
                     <div class="col-8">
                       <div class="fblog_content">
-                        <a href="#"> A Formula For Help And Happiness</a>
+                        <a href="blog-details.html"> A Formula For Help And Happiness</a>
                         <span>18 February, 2022</span>
                       </div>
                     </div>
@@ -637,18 +713,18 @@
                   <div class="row align-items-center">
                     <div class="col-4">
                       <div class="fblog_img img">
-                        <a href="#"><img src="assets/images/f2.jpg" alt="" /></a>
+                        <a href="blog-details.html"><img src="assets/images/f2.jpg" alt=""></a>
                       </div>
                     </div>
                     <div class="col-8">
                       <div class="fblog_content">
-                        <a href="#">
-                          Donation is hope for poor helpless children</a>
+                        <a href="blog-details.html"> Donation is hope for poor helpless children</a>
                         <span>18 February, 2022</span>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -658,7 +734,7 @@
             <div class="footer_subscrive">
               <h6>Subscribe us for more update & news !!</h6>
               <form action="#">
-                <input type="email" placeholder="Enter Your Email" />
+                <input type="email" placeholder="Enter Your Email">
                 <button class="red_btn" type="submit">Subscribe</button>
               </form>
             </div>
@@ -666,27 +742,19 @@
           <div class="col-xl-6 col-lg-6 col-12">
             <div class="footer_social">
               <ul
-                class="social_icon d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-center gap-2">
-                <li>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                </li>
+                class="social_icon d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-center  gap-2">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
               </ul>
               <ul
-                class="page_link d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-center gap-3 flex-wrap">
-                <li><a href="#">Privacy Policy</a></li>
+                class="page_link d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-center gap-2 flex-wrap">
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
                 <li><a href="#">/</a></li>
-                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="terms.html">Terms & Condition</a></li>
                 <li><a href="#">/</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="faq.html">FAQ</a></li>
               </ul>
             </div>
           </div>
@@ -697,22 +765,135 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <p>Copyright &copy; 2023 Blad Ai. All rights reserved</p>
+            <p>Copyright &copy; 2020 Blad Ai. All rights reserved</p>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
   <!-- footer section end -->
 
-  <!--Esential Js Files-->
+  <!-- mobile menu offcanvas -->
+  <div class="offcanvas offcanvas-start" id="offcanvas-mobile">
+    <div class="offcanvas-body">
+      <div class="mobile-menu">
+        <a href="index.html" class="logo py-3"><img src="assets/images/icon/red-logo.png" alt="logo"
+            class="img-fluid"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        <ul class="accordion accordion-flush mobile_dropdown" id="accordionFlushExample">
+          <li class="accordion-item">
+            <h2>
+              <button class="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false">
+                Home
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="index.html">Home Page 1</a></li>
+                  <li><a href="index-2.html">Home Page 2</a></li>
+                  <li><a href="index-3.html">Home Page 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h2><a href="about.html">About</a></h2>
+          </li>
+          <li class="accordion-item">
+            <h2>
+              <button class="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsetwo" aria-expanded="false">
+                Pages
+              </button>
+            </h2>
+            <div id="flush-collapsetwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="service.html">service</a></li>
+                  <li><a href="service-details.html">service Details</a></li>
+                  <li><a href="faq.html">Faq</a></li>
+                  <li><a href="faq.html">Photo Gallary</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="register.html">Registation</a></li>
+                  <li><a href="privacypolicy.html">privacypolicy</a></li>
+                  <li><a href="terms.html">Terms & Condition</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h2>
+              <button class="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsetwo" aria-expanded="false">
+                Blog
+              </button>
+            </h2>
+            <div id="flush-collapsetwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="blog-default.html">Blog</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                  <li><a href="blog-details-left-sidebar.html">Blog Left</a></li>
+                  <li><a href="blog-details-right-sidebar.html">Blog Right</a></li>
+                  <li><a href="blog-style1.html">Blog Style 1</a></li>
+                  <li><a href="blog-style2.html">Blog Style 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h2><a href="contact.html">Contact</a></h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- right side offcanvas -->
+  <div class="offcanvas offcanvas-end right_canvas" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="content-top mb-100">
+        <a href="index.html">Blad Ai</a>
+        <p>Distrak Street 2SK Line, Germanygalore@inside-support.com (+125)
+          2156-2145</p>
+      </div>
+      <div class="offcanvus-gallery d-flex align-items-center flex-wrap">
+        <a class="img" href="#"><img src="assets/images/r1.jpg" alt="not found"></a>
+        <a class="img" href="#"><img src="assets/images/r2.jpg" alt="not found"></a>
+        <a class="img" href="#"><img src="assets/images/r1.jpg" alt="not found"></a>
+        <a class="img" href="#"><img src="assets/images/r3.jpg" alt="not found"></a>
+        <a class="img" href="#"><img src="assets/images/r1.jpg" alt="not found"></a>
+        <a class="img" href="#"><img src="assets/images/r2.jpg" alt="not found"></a>
+      </div>
+      <div class="offcanvus-newsletter">
+        <h4 class="mb-4 text-center">Newsletter</h4>
+        <form action="#">
+          <input type="email" placeholder="Enter your e-mail" class="theme-input mb-3">
+          <button type="submit" class="black_btn w-100 border-0 p-2"><span>SUBSCRIBE
+              NOW</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript Files -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/wow.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/fancybox.js"></script>
   <script src="assets/js/counterup.min.js"></script>
+  <script src="assets/js/progress-bar.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
+  <script src="assets/js/nice-select.js"></script>
   <script src="assets/js/waypoints.js"></script>
   <script src="assets/js/script.js"></script>
 </body>

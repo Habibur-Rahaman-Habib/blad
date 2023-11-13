@@ -583,6 +583,7 @@
 // news
 .news_content_item {
   box-shadow: var(--shadow);
+  height: 100%;
   &:hover {
     .news_img {
       a {
@@ -830,6 +831,7 @@
   padding: 35px;
   box-shadow: var(--shadow);
   background: var(--white);
+  padding-bottom: 30px;
 }
 
 // testimonial
@@ -871,4 +873,22 @@
 }
 .slick-dots {
   cursor: pointer;
+}
+
+// mega menu blog
+.megamenu-banner {
+  .fblog_img {
+    a {
+      padding: 0 !important;
+      width: 100%;
+    }
+  }
+  .fblog_content {
+    a {
+      padding: 0 !important;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
 }

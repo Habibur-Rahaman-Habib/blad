@@ -35,11 +35,14 @@
       }
       &.active {
         color: var(--primary-color);
+        &::before {
+          color: white !important;
+        }
       }
       & + li {
         &::before {
           content: "/";
-          font-size: 24px;
+          font-size: 19px;
           margin-left: 8px;
           margin-right: 8px;
         }
