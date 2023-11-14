@@ -243,6 +243,7 @@
   position: relative;
   @media (max-width: 991px) {
     margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 .help_wrap {
@@ -391,6 +392,10 @@
   padding: 90px 0;
   background-size: cover;
   z-index: 1;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+
   .call_content {
     border: 8px solid var(--primary-color);
     position: relative;
@@ -658,6 +663,9 @@
 // team
 .team {
   padding-bottom: 100px;
+  @media (max-width: 767px) {
+    padding-bottom: 40px;
+  }
   .team_details {
     padding: 25px;
     padding-bottom: 0;

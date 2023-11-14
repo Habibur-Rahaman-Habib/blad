@@ -44,6 +44,9 @@
 // gallery
 .gallery3 {
   padding-bottom: 90px;
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
 }
 
 // request & appoinment

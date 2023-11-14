@@ -62,13 +62,13 @@
 .pt-120 {
   padding-top: 100px;
   @include screen-768 {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 }
 .ptb-120 {
   padding: 100px 0;
   @include screen-768 {
-    padding: 70px 0;
+    padding: 50px 0;
   }
 }
 .ptb-60 {
