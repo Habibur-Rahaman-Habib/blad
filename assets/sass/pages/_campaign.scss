@@ -55,9 +55,8 @@
   box-shadow: none;
   border-bottom: 5px solid transparent;
   transition: var(--transition);
-  &:hover {
-    border-bottom: 5px solid var(--primary-color);
-  }
+  border-bottom: 5px solid var(--primary-color);
+
   h5 {
     font-size: 28px;
   }
