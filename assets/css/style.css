@@ -3117,18 +3117,8 @@ footer .footer_bottom {
   padding: 30px 25px;
   margin: 35px 0;
   margin-top: 20px;
-  border-radius: 15px 15px 15px 0px;
+  border-radius: 15px 15px 15px 15px;
   position: relative; }
-  .testi_slider .testi_slider_item .testi_content::before {
-    content: "";
-    position: absolute;
-    bottom: -33px;
-    left: 0;
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
-    clip-path: polygon(100% 0, 0 0, 0 100%);
-    background-color: white;
-    width: 45px;
-    height: 39px; }
   .testi_slider .testi_slider_item .testi_content .star {
     margin-bottom: 30px; }
     .testi_slider .testi_slider_item .testi_content .star span {
