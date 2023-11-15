@@ -6,12 +6,20 @@
 }
 // hero
 .hm2_hero {
-  background: url("../images/hm2.jpg") no-repeat;
   position: relative;
   z-index: 1;
   background-size: cover;
   background-position: center;
   padding: 240px 0;
+  &.hm21 {
+    background: url("../images/hm2.jpg") no-repeat;
+  }
+  &.hm22 {
+    background: url("../images/hm1.png") no-repeat;
+  }
+  &.hm23 {
+    background: url("../images/hm3.jpg") no-repeat;
+  }
   &::before {
     content: "";
     position: absolute;

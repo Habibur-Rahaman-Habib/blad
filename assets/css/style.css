@@ -965,10 +965,12 @@ header .header_top {
         color: var(--primary-color); }
       .header_bottom .main_menu li:hover .bi_megamenu {
         opacity: 1;
-        visibility: visible; }
+        visibility: visible;
+        top: 100%; }
       .header_bottom .main_menu li:hover ul {
         opacity: 1;
-        visibility: visible; }
+        visibility: visible;
+        top: 100%; }
       .header_bottom .main_menu li a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -990,14 +992,14 @@ header .header_top {
       .header_bottom .main_menu li > ul {
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 103%;
         z-index: -1;
         background: var(--white);
         opacity: 0;
         visibility: hidden;
-        -webkit-transition: 0.5s linear;
-        -o-transition: 0.5s linear;
-        transition: 0.5s linear; }
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s; }
         .header_bottom .main_menu li > ul li + li {
           border-top: 1px solid var(--border-color); }
         .header_bottom .main_menu li > ul li a {
@@ -1086,15 +1088,15 @@ header .header_top {
   background: var(--white);
   -webkit-box-shadow: 0px 9px 52px 0px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 9px 52px 0px rgba(0, 0, 0, 0.07);
-  top: 100%;
+  top: 103%;
   left: 0;
   width: 1170px;
   padding: 50px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.5s linear;
-  -o-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   padding-bottom: 40px; }
   .bi_megamenu .megamenu_row {
     display: -webkit-box;
@@ -2209,10 +2211,15 @@ footer .footer_bottom {
   height: 55px; }
 
 .hm1_hero {
-  background: url("../images/hero1.jpg") no-repeat;
   padding: 145px 0;
   padding-bottom: 204px;
   background-position: center center; }
+  .hm1_hero.hm1 {
+    background: url("../images/hero1.jpg") no-repeat; }
+  .hm1_hero.hm12 {
+    background: url("../images/hm22.jpg") no-repeat; }
+  .hm1_hero.hm13 {
+    background: url("../images/hm33.png") no-repeat; }
   @media (max-width: 991px) {
     .hm1_hero {
       padding-bottom: 115px; } }
@@ -2237,13 +2244,13 @@ footer .footer_bottom {
   from {
     background-size: 100% 100%; }
   to {
-    background-size: 108% 108%; } }
+    background-size: 103% 103%; } }
 
 @keyframes background_animation {
   from {
     background-size: 100% 100%; }
   to {
-    background-size: 108% 108%; } }
+    background-size: 103% 103%; } }
 
 .hm1_content .video_play {
   margin-bottom: 35px; }
@@ -3117,7 +3124,7 @@ footer .footer_bottom {
   padding: 30px 25px;
   margin: 35px 0;
   margin-top: 20px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 4px;
   position: relative; }
   .testi_slider .testi_slider_item .testi_content .star {
     margin-bottom: 30px; }
@@ -3145,9 +3152,11 @@ footer .footer_bottom {
 .slick-dots {
   cursor: pointer; }
 
-.megamenu-banner .fblog_img a {
-  padding: 0 !important;
-  width: 100%; }
+.megamenu-banner .fblog_img {
+  margin-bottom: 20px; }
+  .megamenu-banner .fblog_img a {
+    padding: 0 !important;
+    display: initial !important; }
 
 .megamenu-banner .fblog_content a {
   padding: 0 !important; }
@@ -3158,12 +3167,17 @@ footer .footer_bottom {
   display: none; }
 
 .hm2_hero {
-  background: url("../images/hm2.jpg") no-repeat;
   position: relative;
   z-index: 1;
   background-size: cover;
   background-position: center;
   padding: 240px 0; }
+  .hm2_hero.hm21 {
+    background: url("../images/hm2.jpg") no-repeat; }
+  .hm2_hero.hm22 {
+    background: url("../images/hm1.png") no-repeat; }
+  .hm2_hero.hm23 {
+    background: url("../images/hm3.jpg") no-repeat; }
   .hm2_hero::before {
     content: "";
     position: absolute;
@@ -3501,6 +3515,12 @@ footer .footer_bottom {
   background-size: cover;
   padding: 240px 0;
   background-position: center center; }
+  .hm3_hero.hm31 {
+    background: url("../images/hm3.jpg") no-repeat; }
+  .hm3_hero.hm32 {
+    background: url("../images/hm1.png") no-repeat; }
+  .hm3_hero.hm33 {
+    background: url("../images/hm2.jpg") no-repeat; }
   @media (max-width: 767px) {
     .hm3_hero {
       padding: 120px 0; } }

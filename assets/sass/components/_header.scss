@@ -154,10 +154,12 @@ header {
         .bi_megamenu {
           opacity: 1;
           visibility: visible;
+          top: 100%;
         }
         ul {
           opacity: 1;
           visibility: visible;
+          top: 100%;
         }
       }
       a {
@@ -177,12 +179,12 @@ header {
       & > ul {
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 103%;
         z-index: -1;
         background: var(--white);
         opacity: 0;
         visibility: hidden;
-        transition: 0.5s linear;
+        transition: 0.4s;
         li {
           + li {
             border-top: 1px solid var(--border-color);
@@ -281,13 +283,13 @@ header {
   position: absolute;
   background: var(--white);
   box-shadow: 0px 9px 52px 0px rgba(0, 0, 0, 0.07);
-  top: 100%;
+  top: 103%;
   left: 0;
   width: 1170px;
   padding: 50px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s linear;
+  transition: 0.4s;
   padding-bottom: 40px;
   .megamenu_row {
     display: flex;

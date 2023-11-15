@@ -4,10 +4,18 @@
   height: 55px;
 }
 .hm1_hero {
-  background: url("../images/hero1.jpg") no-repeat;
   padding: 145px 0;
   padding-bottom: 204px;
   background-position: center center;
+  &.hm1 {
+    background: url("../images/hero1.jpg") no-repeat;
+  }
+  &.hm12 {
+    background: url("../images/hm22.jpg") no-repeat;
+  }
+  &.hm13 {
+    background: url("../images/hm33.png") no-repeat;
+  }
   @media (max-width: 991px) {
     padding-bottom: 115px;
   }
@@ -37,7 +45,7 @@
   }
 
   to {
-    background-size: 108% 108%;
+    background-size: 103% 103%;
   }
 }
 
@@ -946,18 +954,8 @@
       padding: 30px 25px;
       margin: 35px 0;
       margin-top: 20px;
-      border-radius: 15px 15px 15px 15px;
+      border-radius: 4px;
       position: relative;
-      // &::before {
-      //   content: "";
-      //   position: absolute;
-      //   bottom: -33px;
-      //   left: 0;
-      //   clip-path: polygon(100% 0, 0 0, 0 100%);
-      //   background-color: white;
-      //   width: 45px;
-      //   height: 39px;
-      // }
       .star {
         margin-bottom: 30px;
         span {
@@ -995,9 +993,10 @@
 // mega menu blog
 .megamenu-banner {
   .fblog_img {
+    margin-bottom: 20px;
     a {
       padding: 0 !important;
-      width: 100%;
+      display: initial !important;
     }
   }
   .fblog_content {

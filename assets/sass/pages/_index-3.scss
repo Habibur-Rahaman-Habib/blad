@@ -6,6 +6,15 @@
   background-size: cover;
   padding: 240px 0;
   background-position: center center;
+  &.hm31 {
+    background: url("../images/hm3.jpg") no-repeat;
+  }
+  &.hm32 {
+    background: url("../images/hm1.png") no-repeat;
+  }
+  &.hm33 {
+    background: url("../images/hm2.jpg") no-repeat;
+  }
   @media (max-width: 767px) {
     padding: 120px 0;
   }
