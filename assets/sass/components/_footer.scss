@@ -29,6 +29,7 @@ footer {
           &:hover {
             a {
               color: var(--primary-color);
+              padding-left: 7px;
             }
           }
           & + li {
@@ -116,6 +117,7 @@ footer {
             height: 50px;
             font-weight: 600;
             top: 5px;
+            background: var(--primary-color);
             @media (max-width: 500px) {
               width: 115px;
             }

@@ -10,6 +10,8 @@
   position: relative;
   z-index: 1;
   background-size: cover;
+  background-position: center;
+  padding: 240px 0;
   &::before {
     content: "";
     position: absolute;
@@ -43,6 +45,23 @@
     margin: 5px 5px;
   }
 }
+
+.hm1_hero_slider {
+  .slick-slide.slick-active {
+    .hm2_content {
+      h4 {
+        animation: 1.7s theme_fadeInUp;
+      }
+      h2 {
+        animation: 2s theme_fadeInUp;
+      }
+      a {
+        animation: 2.5s theme_fadeInUp;
+      }
+    }
+  }
+}
+
 .hm2_hero_slider .prev-arrow,
 .hm2_hero_slider .next-arrow {
   color: var(--white);
@@ -204,7 +223,11 @@
 
 .gallary_item {
   position: relative;
+  overflow: hidden;
   &:hover {
+    img {
+      transform: scale(1.09);
+    }
     a {
       visibility: visible;
       opacity: 1;
@@ -212,7 +235,9 @@
     }
   }
   img {
+    transform: scale(1);
     width: 100%;
+    transition: 0.4s;
   }
   a {
     position: absolute;
@@ -227,7 +252,7 @@
     visibility: hidden;
     opacity: 0;
     transition: var(--transition);
-    transform: scale(0);
+    transform: scale(0.5);
     i {
       color: var(--primary-color);
       width: 45px;
@@ -345,9 +370,27 @@
       }
       .page_link {
         li {
+          &:hover {
+            a {
+              color: var(--primary-color) !important;
+            }
+          }
           a {
             color: var(--secondary-color) !important;
           }
+        }
+      }
+    }
+  }
+}
+
+.footer_subscrive {
+  form {
+    button.black_bg_hover {
+      &:hover {
+        color: white !important;
+        &::before {
+          background: var(--secondary-color) !important;
         }
       }
     }

@@ -24,15 +24,6 @@
     Fancybox.bind("[data-fancybox]", {
     });
 
-    // counter UP
-    $(document).ready(function () {
-        $('.count').counterUp({
-            delay: 10,
-            time: 5000
-        });
-    });
-
-
 
     $(".campaign_slider").slick({
         slidesToShow: 2,
@@ -84,13 +75,11 @@
 
     $(".hm1_hero_slider").slick({
         autoplay: true,
-        autoplaySpeed: 300,
         slidesToShow: 1,
         prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
         nextArrow: '<button class="next-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
-        // speed: 2000,
-        autoplay: false,
-        // fade: true,
+        speed: 800,
+        fade: true,
     });
 
 
@@ -219,6 +208,25 @@
         return false;
     });
 
+    // sticky header
+
+    $(window).scroll(function () {
+
+        if ($(window).scrollTop() > 200) {
+            $('.header_bottom').addClass('fixed_menu');
+        } else {
+            $('.header_bottom').removeClass('fixed_menu');
+        }
+    });
+
+
+    // counter UP
+    $(document).ready(function () {
+        $('.count').counterUp({
+            delay: 10,
+            time: 5000
+        });
+    });
 
 
 })(jQuery);

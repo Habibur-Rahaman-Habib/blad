@@ -252,3 +252,12 @@ select:focus {
 .fs-42 {
   font-size: 42px;
 }
+
+.slider-spacing {
+  .slick-list {
+    margin: 0 -12px;
+    .slick-slide {
+      margin: 0 12px;
+    }
+  }
+}

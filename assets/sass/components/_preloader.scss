@@ -30,9 +30,8 @@
   height: 100%;
   display: inline-block;
   border-radius: 30px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   animation: 2s loading;
-  background-color: white;
 }
 
 @keyframes loading {

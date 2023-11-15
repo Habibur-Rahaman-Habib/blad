@@ -5,7 +5,6 @@
 }
 .hm1_hero {
   background: url("../images/hero1.jpg") no-repeat;
-  background-size: cover;
   padding: 145px 0;
   padding-bottom: 204px;
   background-position: center center;
@@ -14,10 +13,35 @@
   }
 }
 
-.hm1_content {
-  @media (max-width: 576px) {
-    text-align: center;
+.hm_bg {
+  background-size: 100% 100%;
+  @media (max-width: 1200px) {
+    background-size: cover;
+    animation: none;
   }
+}
+.hm1_hero_slider {
+  .slick-slide.slick-active {
+    .hm_bg {
+      animation: 10s background_animation;
+      @media (max-width: 1200px) {
+        animation: none;
+      }
+    }
+  }
+}
+
+@keyframes background_animation {
+  from {
+    background-size: 100% 100%;
+  }
+
+  to {
+    background-size: 108% 108%;
+  }
+}
+
+.hm1_content {
   .video_play {
     margin-bottom: 35px;
     a {
@@ -26,24 +50,14 @@
       color: white;
       position: relative;
       z-index: 1;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 55px;
-        height: 55px;
-        background: #ff000024;
-        z-index: -1;
-        left: 5px;
-        top: 5px;
-        -webkit-animation: blood2 1.5s infinite;
-        animation: blood2 2s infinite;
-      }
+      animation: blood3 2.2s infinite;
       i {
         font-size: 20px;
       }
     }
     h6 {
       font-weight: 600;
+      margin-left: 15px;
     }
   }
 
@@ -57,6 +71,18 @@
     max-width: 100%;
     margin-bottom: 45px;
     font-weight: 700;
+  }
+}
+
+@keyframes blood3 {
+  0% {
+    box-shadow: 0 0 0 0 red;
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(1, 93, 199, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(1, 93, 199, 0);
   }
 }
 
@@ -109,12 +135,53 @@
   }
 }
 
+.hm1_hero_slider {
+  .slick-slide.slick-active {
+    .hm1_content {
+      .video_play {
+        animation: 1.7s theme_fadeInUp;
+
+        h6 {
+          animation: 1.7s theme_fadeInUp;
+        }
+      }
+      h3 {
+        animation: 2s theme_fadeInUp;
+      }
+      h1 {
+        animation: 2.5s theme_fadeInUp;
+      }
+      .explore_now {
+        animation: 3s theme_fadeInUp;
+      }
+    }
+  }
+}
+
+@keyframes theme_fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 // register & donate
 
 .register_donate_item {
   &:hover {
     .donate_item_top {
       .donate_img {
+        img {
+          transform: scale(1.1);
+        }
         &::before {
           visibility: visible;
           opacity: 1;
@@ -123,6 +190,7 @@
       .donate_content {
         span {
           background: var(--primary-color);
+          z-index: 3;
         }
         h5 {
           color: var(--secondary-color);
@@ -141,7 +209,12 @@
     padding: 15px;
     background: var(--white);
     .donate_img {
+      overflow: hidden;
       position: relative;
+      img {
+        transform: scale(1);
+        transition: var(--transition_base);
+      }
       &::before {
         content: "";
         position: absolute;
@@ -153,7 +226,7 @@
         transition: var(--transition);
         visibility: hidden;
         opacity: 0;
-        // transform: scale(0);
+        z-index: 1;
       }
       img {
         width: 100%;
@@ -460,19 +533,26 @@
   }
   &:hover {
     .campaign_img {
+      img {
+        transform: scale(1.09);
+      }
       a {
         visibility: visible;
         opacity: 1;
-        transform: scale(1);
+        transform: scale(1.2);
+        border-radius: 25%;
       }
     }
   }
   .campaign_img {
     position: relative;
     height: 100%;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
+      transform: scale(1);
+      transition: 0.4s;
     }
     a {
       position: absolute;
@@ -487,10 +567,11 @@
       display: inline-flex;
       visibility: hidden;
       opacity: 0;
-      transition: var(--transition);
-      transform: scale(0);
+      transition: 0.6s;
+      transform: scale(0.05);
       font-size: 18px;
       font-weight: 600;
+      border-radius: 0%;
     }
   }
   .campaign_content {
@@ -591,6 +672,9 @@
   height: 100%;
   &:hover {
     .news_img {
+      img {
+        transform: scale(1.09);
+      }
       a {
         visibility: visible;
         opacity: 1;
@@ -605,8 +689,11 @@
   }
   .news_img {
     position: relative;
+    overflow: hidden;
     img {
       width: 100%;
+      transition: 0.4s;
+      transform: scale(1);
     }
     a {
       position: absolute;
@@ -674,6 +761,10 @@
     box-shadow: 0px 0px 20px #0000001c;
     &:hover {
       .team_img {
+        overflow: hidden;
+        img {
+          transform: scale(1.09);
+        }
         ul {
           visibility: visible;
           opacity: 1;
@@ -683,6 +774,10 @@
     }
     .team_img {
       position: relative;
+      img {
+        transition: 0.5s;
+        transform: scale(1);
+      }
       ul {
         position: absolute;
         width: 100%;
@@ -694,7 +789,7 @@
         align-items: center;
         justify-content: center;
         gap: 11px;
-        transform: scale(0);
+        transform: scale(0.6);
         transition: var(--transition);
         visibility: hidden;
         opacity: 0;
@@ -846,13 +941,23 @@
 .testi_slider {
   .testi_slider_item {
     .testi_content {
-      background: url("../images/slider_bg.png") no-repeat;
-      background-size: 100% 102%;
-      padding-left: 40px;
-      padding-right: 33px;
-      padding-top: 53px;
-      padding-bottom: 50px;
-      background-position: center top;
+      background: white;
+      box-shadow: 0px 0px 13px #dddddd8c;
+      padding: 30px 25px;
+      margin: 35px 0;
+      margin-top: 20px;
+      border-radius: 15px 15px 15px 0px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -33px;
+        left: 0;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+        background-color: white;
+        width: 45px;
+        height: 39px;
+      }
       .star {
         margin-bottom: 30px;
         span {
@@ -868,6 +973,10 @@
       margin-left: 35px;
       .testi_img {
         flex-shrink: 0;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        text-align: center;
       }
       h5 {
         font-weight: 700;
